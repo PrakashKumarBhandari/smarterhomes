@@ -81,3 +81,23 @@ function strlimit($str,$limit=10,$add='...'){
 
 
 
+
+ /*
+* Add Image sizes
+*/
+if ( !function_exists('smarter_add_image_sizes') ){
+
+	function smarter_add_image_sizes() {
+        
+        // Add your own image sizes
+        // add_image_size( 'small_icon', 40, 40);
+        // add_image_size( 'mid_icon', 80, 80);
+        // add_image_size( 'press_image', 600, 270);
+        // add_image_size( 'press_image_center', 600, 270, array( 'center', 'center' ) );       
+        // add_image_size( 'banner_small_height', 1920,240,true);
+        add_image_size( 'banner_image', 1920,970,true);       
+    }
+}
+add_action( 'after_setup_theme', 'smarter_add_image_sizes' );
+
+
