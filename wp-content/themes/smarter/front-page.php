@@ -39,240 +39,118 @@ get_header();?>
      <!-- Slider -->
      <div class="section banner z-index9 " id="section0">
          <div class="cSlider cSlider--single ">
-             <div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo get_template_directory_uri();?>/assets/images/banner/banner1.jpg');">
-                 <div class="container-fluid">
-                     <div class="wrappertiptip">
-                         <div class="click-tool">
-                             <div class="tooltip-example">
-                                 <div class="tooltip1">		
-                                     <div class="plus_btn">
-                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
-                                     </div>
-                                     <div class="tooltip__content  ntx3">
-                                        
-                                             <div class="taghead">
-                                                 <span>Features</span>
-                                             </div>
-                                             <div class="click-title">
-                                                 How We Compare?
-                                             </div>
-                                             <div class="click-para">
-                                                 You are reading dummy texts for this layout. Contents are for display only.
-                                             </div>
-                                             <div class="btn-click">
-                                                 <a href="">More Details   ></a>
-                                             </div>
-                                         
-                                         </div>
-                                     </div>
-                             
-                             </div>
-                         </div>
-                     </div>
-                     
-                     <div class="slider-caption">
-                         <div class="slider-contents">
-                             <div class="slider-heading wow fadeInLeft" data-wow-delay="0.6s">
-                                 <h2>The Life of Innovations with <span>Solar Panels</span></h2>
-                             </div>
-                             <div class="slider-para wow fadeInLeft" data-wow-delay="0.7s">
-                                 <div class="row">
-                                     <div class="col-md-6">
-                                         <div class="sld-cns">
-                                             These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.
-                                         </div>
-                                     </div>
-                                     <div class="col-md-6">
-                                         <div class="sld-bts">
-                                             <ul>
-                                                 <li><a class="gt-quote " href="">Get a Quite Now</a></li>
-                                                 <li><a class="wy-choose" href="">Why Choose Now</a></li>
-                                             </ul>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             <div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo get_template_directory_uri();?>/assets/images/banner/banner2.jpg');">
-                 <div class="container-fluid">
-                     <div class="slider-caption">
-                         <div class="slider-contents">
-                             <div class="slider-heading">
-                                 <h2>The Life of Innovations with <span>Solar Panels</span></h2>
-                             </div>
-                             <div class="slider-para">
-                                 <div class="row">
-                                     <div class="col-md-6">
-                                         <div class="sld-cns">
-                                            <p>These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.</p>
-                                         </div>
-                                     </div>
-                                     <div class="col-md-6">
-                                         <div class="sld-bts">
-                                             <ul>
-                                                 <li><a class="gt-quote" href="">Get a Quite Now</a></li>
-                                                 <li><a class="wy-choose" href="">Why Choose Now</a></li>
-                                             </ul>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             <div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo get_template_directory_uri();?>/assets/images/banner/banner3.jpg');">
-                 <div class="container-fluid">
-                     <div class="wrappertiptip">
-                         <div class="click-tool">
-                             <div class="tooltip-example">
-                                 <div class="tooltip1">		
-                                     <div class="plus_btn">
-                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
-                                     </div>
-                                     <div class="tooltip__content  ntx3">
-                                        
-                                             <div class="taghead">
-                                                 <span>Features</span>
-                                             </div>
-                                             <div class="click-title">
-                                                 How We Compare?
-                                             </div>
-                                             <div class="click-para">
-                                                 You are reading dummy texts for this layout. Contents are for display only.
-                                             </div>
-                                             <div class="btn-click">
-                                                 <a href="">More Details   ></a>
-                                             </div>
-                                         
-                                         </div>
-                                     </div>
-                             
-                             </div>
-                         </div>
-                     </div>
-                     <div class="slider-caption">
-                         <div class="slider-contents">
-                             <div class="slider-heading">
-                                 <h2>The Life of Innovations with <span>Solar Panels</span></h2>
-                             </div>
-                             <div class="slider-para">
-                                 <div class="row">
-                                     <div class="col-md-6">
-                                         <div class="sld-cns">
-                                             <p>These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.</p>
-                                         </div>
-                                     </div>
-                                     <div class="col-md-6">
-                                         <div class="sld-bts">
-                                             <ul>
-                                                 <li><a class="gt-quote" href="">Get a Quite Now</a></li>
-                                                 <li><a class="wy-choose" href="">Why Choose Now</a></li>
-                                             </ul>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             <div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo get_template_directory_uri();?>/assets/images/banner/banner4.jpg');">
-                 <div class="container-fluid">
-                     <div class="wrappertiptip">
-                         <div class="click-tool">
-                             <div class="tooltip-example">
-                                 <div class="tooltip1">		
-                                     <div class="plus_btn">
-                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
-                                     </div>
-                                     <div class="tooltip__content  ntx3">
-                                        
-                                             <div class="taghead">
-                                                 <span>Features</span>
-                                             </div>
-                                             <div class="click-title">
-                                                 How We Compare?
-                                             </div>
-                                             <div class="click-para">
-                                                 You are reading dummy texts for this layout. Contents are for display only.
-                                             </div>
-                                             <div class="btn-click">
-                                                 <a href="">More Details   ></a>
-                                             </div>
-                                         
-                                         </div>
-                                     </div>
-                             
-                             </div>
-                         </div>
-                     </div>
-                     <div class="slider-caption">
-                         <div class="slider-contents">
-                             <div class="slider-heading">
-                                 <h2>The Life of Innovations with <span>Solar Panels</span></h2>
-                             </div>
-                             <div class="slider-para">
-                                 <div class="row">
-                                     <div class="col-md-6">
-                                         <div class="sld-cns">
-                                             <p>These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.</p>
-                                         </div>
-                                     </div>
-                                     <div class="col-md-6">
-                                         <div class="sld-bts">
-                                             <ul>
-                                                 <li><a class="gt-quote" href="">Get a Quite Now</a></li>
-                                                 <li><a class="wy-choose" href="">Why Choose Now</a></li>
-                                             </ul>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             <div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo get_template_directory_uri();?>/assets/images/banner/banner5.jpg');">
-                 <div class="container-fluid">
-                     <div class="slider-caption">
-                         <div class="slider-contents">
-                             <div class="slider-heading">
-                                 <h2>The Life of Innovations with <span>Solar Panels</span></h2>
-                             </div>
-                             <div class="slider-para">
-                                 <div class="row">
-                                     <div class="col-md-6">
-                                         <div class="sld-cns">
-                                            <p>These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.</p>
-                                         </div>
-                                     </div>
-                                     <div class="col-md-6">
-                                         <div class="sld-bts">
-                                             <ul>
-                                                 <li><a class="gt-quote" href="">Get a Quite Now</a></li>
-                                                 <li><a class="wy-choose" href="">Why Choose Now</a></li>
-                                             </ul>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-          
+             <?php
+            // Check rows exists.
+            if ( have_rows( 'banner_slider_image' ) ) :
+            // Loop through rows.
+            while ( have_rows( 'banner_slider_image' ) ) :
+            the_row();
+            $slider_big_image  = '';
+            $slider_thumbnail_image  = '';
+            $slider_images = get_sub_field( 'slider_image' );
+            if ( ! empty( $slider_images ) ) {
+                $slider_big_image = $slider_images['url'];
+            }
+            ?>
+            <div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo $slider_big_image;?>');">
+                    <div class="container-fluid">
+                        
+                        <?php
+                        $get_banner_hover_block = get_sub_field( 'banner_hover_block' );
+                        if(!empty($get_banner_hover_block['title'])){
+                        ?>
+                        <div class="wrappertiptip">
+                            <div class="click-tool">
+                                <div class="tooltip-example">
+                                    <div class="tooltip1">		
+                                        <div class="plus_btn">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
+                                        </div>
+                                        <div class="tooltip__content  ntx3">                                        
+                                                <div class="taghead">
+                                                    <span><?php echo $get_banner_hover_block['heading'];?></span>
+                                                </div>
+                                                <div class="click-title">
+                                                   <?php echo $get_banner_hover_block['title'];?>
+                                                </div>
+                                                <div class="click-para">
+                                                    <?php echo $get_banner_hover_block['short_detail'];?>
+                                                </div>
+                                                <?php
+                                                if(!empty($get_banner_hover_block['detail_link'])){
+                                                ?>
+                                                <div class="btn-click">
+                                                    <a href="<?php echo $get_banner_hover_block['detail_link'];?>">More Details   ></a>
+                                                </div>
+                                                <?php 
+                                                }?>                                         
+                                            </div>
+                                        </div>                             
+                                </div>
+                            </div>
+                        </div>
+                        <?php
+                        }
+                        ?>                        
+                        <div class="slider-caption">
+                            <div class="slider-contents">
+                                <div class="slider-heading wow fadeInLeft" data-wow-delay="0.6s">
+                                    <h2><?php the_sub_field( 'banner_title' ); ?></h2>
+                                </div>
+                                <div class="slider-para wow fadeInLeft" data-wow-delay="0.7s">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="sld-cns">
+                                            <?php the_sub_field( 'banner_short_detail' ); ?>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="sld-bts">
+                                                <ul>
+                                                    <?php
+                                                    $counter_link = 1;
+                                                    if ( have_rows( 'buttons_and_links' ) ) :
+                                                    while ( have_rows( 'buttons_and_links' ) ) :
+                                                    the_row();
+                                                    ?>
+                                                    <li><a class="<?php if($counter_link=='1'){ echo 'gt-quote';}else{ echo'wy-choose';} ?> " href="<?php the_sub_field( 'button_link' ); ?>"><?php the_sub_field( 'button_label' ); ?></a></li>
+                                                    <?php
+                                                    $counter_link++;
+                                                    endwhile;
+                                                    endif;
+                                                    ?>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             <?php
+            endwhile;
+            endif;
+            ?>
          </div>
  
          <div class="cSlider cSlider--nav slider-rightPanel wow fadeInRight" data-wow-delay="0.6s">
-             <div class="cSlider__item"><img src="<?php echo get_template_directory_uri();?>/assets/images/banner/banner1.jpg" alt=""></div>
-             <div class="cSlider__item"><img src="<?php echo get_template_directory_uri();?>/assets/images/banner/banner2.jpg" alt=""></div>
-             <div class="cSlider__item"><img src="<?php echo get_template_directory_uri();?>/assets/images/banner/banner3.jpg" alt=""></div>
-             <div class="cSlider__item"><img src="<?php echo get_template_directory_uri();?>/assets/images/banner/banner4.jpg" alt=""></div>
-             <div class="cSlider__item"><img src="<?php echo get_template_directory_uri();?>/assets/images/banner/banner5.jpg" alt=""></div>
+         <?php
+            if ( have_rows( 'banner_slider_image' ) ) :
+            while ( have_rows( 'banner_slider_image' ) ) :
+            the_row();
+            $slider_big_image  = '';
+            $slider_thumbnail_image  = '';
+            $slider_images = get_sub_field( 'slider_image' );
+            if ( ! empty( $slider_images ) ) {
+                $slider_big_image = $slider_images['sizes']['thumbnail'];
+            }
+            ?>
+            <div class="cSlider__item"><img src="<?php echo $slider_big_image;?>" alt=""></div>             
+            <?php
+            endwhile;
+            endif;
+            ?>
          </div>
      </div>
      <!-- end slider -->
@@ -283,72 +161,56 @@ get_header();?>
              <!-- section title -->
              <div class="section-title">
                  <div class="main-title text-center">
-                     <h2>Services<span class="mg-l">We Offer</span></h2>
+                     <h2><?php the_field( 'service_title' ); ?></h2>
                  </div>
-                 <div class="section-paragraph mx-w830 text-center margin-center mt-20">Solar is not just a phase – it’s an aggressively growing alternative as more and more people realize that they can save money every month by using solar panels.</div>
+                 <div class="section-paragraph mx-w830 text-center margin-center mt-20"><?php the_field( 'service_sub_title' ); ?></div>
              </div>
              <!-- section title end -->
  
              <div class="section-servceList">
                  <div class="row">
-                     <div class="col-lg-4 col-md-4 col-12"  >
+                    <?php
+                    // Check rows exists.
+                    if ( have_rows( 'service_offers' ) ) :
+                    // Loop through rows.
+                    while ( have_rows( 'service_offers' ) ) :
+                    the_row();
+                    $offer_block_image  = '';
+                    $offer_hover_image  = '';
+                    $icon_image = get_sub_field( 'offer_icon_image' );
+                    if ( ! empty( $icon_image ) ) {
+                        $offer_block_image = $icon_image['url'];
+                    }
+                    $hover_icon_image = get_sub_field( 'offer_icon_hover' );
+                    if ( ! empty( $hover_icon_image ) ) {
+                        $offer_hover_image = $hover_icon_image['url'];
+                    }
+                    ?>
+                    <div class="col-lg-4 col-md-4 col-12"  >
                          <div class="list-card ">
                              <ul>
                                  <li class="img-servicesIcon">
-                                     <img class="services-icon" src="<?php echo get_template_directory_uri();?>/assets/images/icons/home-build.png" alt="">
-                                     <span><img class="services-icon" src="<?php echo get_template_directory_uri();?>/assets/images/icons/home-build-white.png" alt=""></span>
+                                     <img class="services-icon" src="<?php echo $offer_block_image;?>" alt="">
+                                     <span><img class="services-icon" src="<?php echo $offer_hover_image;?>" alt=""></span>
                                  </li>
                                  <li class="right-cardContents">
                                      <div class="card-title">
-                                         New Home Builds
+                                        <?php the_sub_field( 'title' ); ?>
                                      </div>
                                      <div class="card-paragraph">
-                                     We can Install solar panels on your new homes too. If your home or the land has access to unobstructed sunlight, you’re in luck.
+                                        <?php the_sub_field( 'short_detail' ); ?>
                                      </div>
                                  </li>
                              </ul>
                          </div>
-                     </div>
-                     <div class="col-lg-4 col-md-4 col-12">
-                         <div class="list-card">
-                             <ul>
-                                 <li class="img-servicesIcon">
-                                     <img class="services-icon" src="<?php echo get_template_directory_uri();?>/assets/images/icons/building.png" alt="">
-                                     <span><img class="services-icon" src="<?php echo get_template_directory_uri();?>/assets/images/icons/building-white.png" alt=""></span>
-                                 </li>
-                                 <li class="right-cardContents">
-                                     <div class="card-title">
-                                         Building
-                                     </div>
-                                     <div class="card-paragraph">
-                                         On almost any existing building (residential, light commercial, farms, barns, ...)
-                                     </div>
-                                 </li>
-                             </ul>
-                         </div>
-                     </div>
-                     <div class="col-lg-4 col-md-4 col-12">
-                         <div class="list-card">
-                             <ul>
-                                 <li class="img-servicesIcon">
-                                     <img class="services-icon" src="<?php echo get_template_directory_uri();?>/assets/images/icons/Retrofitting.png" alt="">
-                                     <span><img class="services-icon" src="<?php echo get_template_directory_uri();?>/assets/images/icons/Retrofitting-white.png" alt=""></span>
-                                 </li>
-                                 <li class="right-cardContents">
-                                     <div class="card-title">
-                                         Retrofitting
-                                     </div>
-                                     <div class="card-paragraph">
-                                         Retrofitting / fixing existing installations (paid a fortune for solar and later realize no power in case of power grid outage? – we most likely can upgrade your system …
-                                     </div>
-                                 </li>
-                             </ul>
-                         </div>
-                     </div>
-                     
+                    </div>
+                    <?php
+                    endwhile;
+                    endif;
+                    ?>                     
                  </div>
                  <div class="button-center clearfix">
-                     <a class="hvr-sweep-to-right" href="">View More Services</a>
+                     <a class="hvr-sweep-to-right" href="<?php the_field( 'view_more_services_link' ); ?>">View More Services</a>
                  </div>
              </div>
          </div>
@@ -364,7 +226,7 @@ get_header();?>
                  </div>
                  <div class="section-title ml-40 z-index1">
                      <div class="main-title">
-                         <h2 class="font60">Smarter <br><span>Homes</span></h2>
+                         <h2 class="font60"><?php the_field( 'about_title' ); ?></h2>
                      </div>
                  </div>
              </div>
@@ -373,15 +235,29 @@ get_header();?>
                  <div class="row">
                      <div class="col-md-4">
                          <div class="smarter-home2 ">
-                             <img src="<?php echo get_template_directory_uri();?>/assets/images/smarters-home2.jpg" alt="">
+                            <?php
+                            $smarter_home_image = get_template_directory_uri().'/assets/images/smarters-home2.jpg';
+                            $smarte_home = get_field( 'left_image' );
+                            if ( ! empty( $smarte_home ) ) {
+                                $smarter_home_image = $smarte_home['url'];
+                            }
+                            ?>
+                            <img src="<?php echo $smarter_home_image;?>" alt="">
                          </div>
                      </div>
                      <div class="col-md-8">
                          <div class="smarter-home1">
-                             <img src="<?php echo get_template_directory_uri();?>/assets/images/smarters-home1.jpg" alt="">
+                         <?php
+                            $smarter_home_right = get_template_directory_uri().'/assets/images/smarters-home1.jpg';
+                            $smarter_right = get_field( 'top_image' );
+                            if ( ! empty( $smarter_right ) ) {
+                                $smarter_home_right = $smarter_right['url'];
+                            }
+                            ?>
+                            <img src="<?php echo $smarter_home_right;?>" alt="">
                          </div>
                          <div class="description-smarter">
-                             <p><span>Smarter Homes, LLC </span> mission is to provide reliable, affordable renewable energy solutions to residential homes. Our focus is on providing hybrid and off-grid solar solutions to make homes less dependent on public utilities by being environmentally “green” friendly and help saving money and at the same time upgrading your home to the 21st century by overall smart solutions including video surveillance (“CCTV”) and even digitizing & protecting your home. <br> <br> Since our competitors usually just focus on solar panels and maybe some sort of standalone battery systems, we provide a whole house solution from energy production (solar panels) to whole house ups (never have to reset your clock anymore in case of power outage..) to energy optimization (smart energy management inside the house from light switches to outlets to HVAC energy efficient & smart solutions – and more). All combined with central easy to manage high-end (but easy to use) home automation and management devices.</p>
+                             <p><?php the_field( 'about_detail' ); ?></p>
                          </div>
                      </div>
                  </div>
@@ -396,23 +272,26 @@ get_header();?>
          <div class="why-choosebg">
              <div class="contents-whyChoose">
                  <div class="why-choseTitle">
-                     <h4>Why Choose</h4>
+                     <h4><?php the_field( 'why_smarter_sub_title' ); ?></h4>
                      <div class="sec-title">
-                         <h3>Smart. <span>Homes</span></h3>
+                         <h3><?php the_field( 'why_smarter_title' ); ?></h3>
                      </div>
                  </div>
  
                  <div class="list-whyChose">
                      <ul>
-                         <li>Use solar also while power outages (built into EACH of our systems = NO expensive external battery storage required)</li>
-                         <li>Average Failover from utility grid power to battery power (and back) in less than 0.01 seconds</li>
-                         <li>High efficient single panel based optimization = up to 30% more energy output comparing to conventional panels)</li>
-                         <li>High power panels (400w and more!) = less roof space</li>
-                         <li>High battery storage possible (and affordable) = 30kw or even more Battery storage possible</li>
-                         <li>Optionally full energy management to optimize battery utilization to make your home complete energy independent in case of grid outage (run your ENTIRE home in case of power outage for days or even longer)</li>
-                         <li>Affordable = cheaper than traditional solutions!</li>
-                         <li>Optional full home automation and smarthome services (control your door access, garage doors, light switches, power outlets and more)</li>
-                         <li>Remote controllable breaker panel & load centers</li>
+                            <?php
+                            // Check rows exists.
+                            if ( have_rows( 'why_features' ) ) :
+                            // Loop through rows.
+                            while ( have_rows( 'why_features' ) ) :
+                            the_row();
+                            ?> 
+                            <li><?php the_sub_field( 'feature_lists' ); ?></li>
+                            <?php
+                            endwhile;
+                            endif;
+                            ?>
                      </ul>
                  </div>
              </div>
@@ -437,56 +316,7 @@ get_header();?>
              <!-- section title end -->
  
              <div class="quote-wraper">
-                 <div class="row">
-                     <div class="col-md-4">
-                         <div class="form-group smartser-form">
-                             <input type="text" class="form-control" placeholder="*First Name">
-                         </div>
-                     </div>
-                     <div class="col-md-4">
-                         <div class="form-group smartser-form">
-                             <input type="text" class="form-control" placeholder="*Last Name">
-                         </div>
-                     </div>
-                     <div class="col-md-4">
-                         <div class="form-group smartser-form">
-                             <input type="email" class="form-control" placeholder="*Email Address">
-                         </div>
-                     </div>
-                     <div class="col-md-4">
-                         <div class="form-group smartser-form">
-                             <input type="text" class="form-control" placeholder="*Phone Number">
-                         </div>
-                     </div>
-                     <div class="col-md-6">
-                         <div class="form-group smartser-form">
-                             <select id="inputState" class="form-control">
-                                 <option selected>*State</option>
-                                 <option>...</option>
-                               </select>
-                         </div>
-                     </div>
-                     <div class="col-md-2">
-                         <div class="form-group smartser-form">
-                             <input type="text" class="form-control" placeholder="*Zip Code">
-                         </div>
-                     </div>
-                     <div class="col-lg-8 col-md-12">
-                         <div class="form-group">
-                             <div class="form-check smt-check">
-                               <input class="form-check-input styled-checkbox" type="checkbox" id="gridCheck">
-                               <label class="form-check-label" for="gridCheck">
-                                 By checking this box and submitting this form, I authorize SMARTER.HOMES to use automated technology to call or text my phone number (provided above) for marketing purposes. I may revoke this consent at any time. I understand that my authorization to receive calls and texts via automated technology is not a condition of purchasing of any goods or services. Text message frequency varies. Msg & data rates may apply. Reply STOP to cancel. Reply HELP for assistance. <a href="">Terms & Conditions/Privacy Policy.</a>
-                               </label>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="col-lg-4 col-md-12">
-                         <div class="quite-btn">
-                             <a href="">Get a Free Quote</a>
-                         </div>
-                     </div>
-                 </div>
+                <?php echo do_shortcode('[contact-form-7 id="143" title="Get a Quote"]');?>      
              </div>
          </div>
      </div>
@@ -503,50 +333,43 @@ get_header();?>
                      <div class="col-md-7"></div>
                      <div class="col-md-5">
                          <div class="sec-title text-center">
-                             <h3><span>Why</span> Solor Energy <span>?</span> </h3>
+                             <h3><?php the_field( 'why_solar_title' ); ?></h3>
                          </div>
                          <div class="list-why">
-                             <div class="card-list ">
-                                 <ul>
-                                     <li><img class="op-1" src="<?php echo get_template_directory_uri();?>/assets/images/icons/live-clean.png" alt=""><img class="op-2" src="<?php echo get_template_directory_uri();?>/assets/images/icons/live-clean-yellow.png" alt=""></li>
-                                     <li class="why-card-cnt">
-                                         <div class="card-title">
-                                             New Home Builds
-                                         </div>
-                                         <div class="card-paragraph">
-                                             We can Install solar panels on your new homes too. If your home or the land has access to unobstructed sunlight, you’re in luck.
-                                         </div>
-                                     </li>
-                                 </ul>
-                             </div>
- 
-                             <div class="card-list">
-                                 <ul>
-                                     <li><img class="op-1" src="<?php echo get_template_directory_uri();?>/assets/images/icons/power-cut.png" alt=""><img class="op-2" src="<?php echo get_template_directory_uri();?>/assets/images/icons/power-cut-yellow.png" alt=""></li>
-                                     <li class="why-card-cnt">
-                                         <div class="card-title">
-                                             No Unwanted Power Cuts
-                                         </div>
-                                         <div class="card-paragraph">
-                                             With Solar plant you can get electricity 24X7 without any powercuts due to storms and hailstorm.                                        
-                                         </div>
-                                     </li>
-                                 </ul>
-                             </div>
- 
-                             <div class="card-list">
-                                 <ul>
-                                     <li><img class="op-1" src="<?php echo get_template_directory_uri();?>/assets/images/icons/solar.png" alt=""><img class="op-2" src="<?php echo get_template_directory_uri();?>/assets/images/icons/solar-yellow.png" alt=""></li>
-                                     <li class="why-card-cnt">
-                                         <div class="card-title">
-                                             Save With Solar
-                                         </div>
-                                         <div class="card-paragraph">
-                                             Most Third Sun Solar homeowners save between 50-85% of their annual electricity costs.
-                                         </div>
-                                     </li>
-                                 </ul>
-                             </div>
+                            <?php
+                            // Check rows exists.
+                            if ( have_rows( 'why_solar_features' ) ) :
+                            // Loop through rows.
+                            while ( have_rows( 'why_solar_features' ) ) :
+                            the_row();
+                            $icon_block_image  = '';
+                            $icon_hover_image  = '';
+                            $icon_image = get_sub_field( 'icon' );
+                            if ( ! empty( $icon_image ) ) {
+                                $icon_block_image = $icon_image['url'];
+                            }
+                            $hover_icon_image = get_sub_field( 'icon_hover' );
+                            if ( ! empty( $hover_icon_image ) ) {
+                                $icon_hover_image = $hover_icon_image['url'];
+                            }
+                            ?>
+                            <div class="card-list ">
+                                <ul>
+                                    <li><img class="op-1" src="<?php echo $icon_block_image;?>" alt=""><img class="op-2" src="<?php echo $icon_hover_image;?>" alt=""></li>
+                                    <li class="why-card-cnt">
+                                        <div class="card-title">
+                                            <?php the_sub_field( 'title' ); ?>
+                                        </div>
+                                        <div class="card-paragraph">
+                                            <?php the_sub_field( 'short_detail' ); ?>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <?php
+                            endwhile;
+                            endif;
+                            ?>
                          </div>
                      </div>
                  </div>
@@ -556,32 +379,20 @@ get_header();?>
      </div>
      <!-- end why solar Energy -->
  
+                            
+    <?php
+    $footer_bg_image = get_template_directory_uri().'/assets/images/banner/footer-banner.jpg';
+    $footer_block_image = get_field( 'footer_bg_image' );
+    if ( ! empty( $footer_block_image ) ) {
+    $footer_bg_image = $footer_block_image['url'];
+    }
+    ?>                        
+
       <!-- Footer -->
-     <div class="section z-index-1 footer-fullpage fullcoverPage" id="section6" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/images/banner/footer-banner.jpg">
+     <div class="section z-index-1 footer-fullpage fullcoverPage" id="section6" style="background-image: url(<?php echo $footer_bg_image;?>">
          <div class="footer-form">
-             <div class="container-fluid">
-                 <div class="row">
-                     <div class="col-md-3">
-                         <div class="form-group ft-form smartser-form">
-                             <input type="text" class="form-control" placeholder="Full Name:">
-                         </div>
-                     </div>
-                     <div class="col-md-3">
-                         <div class="form-group ft-form smartser-form">
-                             <input type="email" class="form-control" placeholder="Email:">
-                         </div>
-                     </div>
-                     <div class="col-md-4">
-                         <div class="form-group ft-form smartser-form">
-                             <input type="text" class="form-control" placeholder="Message:">
-                         </div>
-                     </div>
-                     <div class="col-md-2">
-                         <div class="submit-btn">
-                             <button>Submit</button>
-                         </div>
-                     </div>
-                 </div>
+             <div class="container-fluid">             
+             <?php echo do_shortcode('[contact-form-7 id="142" title="Contact form"]'); ?>
              </div>
          </div>
  
@@ -590,7 +401,7 @@ get_header();?>
                  <div class="row">
                      <div class="col-md-3">
                          <div class="img-footer">
-                             <img src="<?php echo get_template_directory_uri();?>/assets/images/logo-footer.png" alt="">
+                            <img src="<?php echo get_template_directory_uri();?>/assets/images/logo-footer.png" alt="">
                          </div>
                      </div>
                      <div class="col-md-9">
@@ -599,25 +410,25 @@ get_header();?>
                                  <div class="col-md-3 col-6">
                                      <div class="smarter-location">
                                          Our Location <br>
-                                         Columbus Ohio, USA
+                                         <?php the_field( 'our_location' ); ?>
                                      </div>
                                  </div>
                                  <div class="col-md-3 col-6">
                                      <div class="smarter-location">
                                          Phone: <br>
-                                         855-244-7212
+                                         <?php the_field( 'phone' ); ?>
                                      </div>
                                  </div>
                                  <div class="col-md-3 col-6">
                                      <div class="smarter-location">
                                          Email Address: <br>
-                                         info@smarter.homes
+                                         <?php the_field( 'email_address' ); ?>
                                      </div>
                                  </div>
                                  <div class="col-md-3 col-6">
                                      <div class="smarter-location">
-                                         Mon-Fri: 9:00AM - 8:00PM <br>
-                                         Sat & Sun: Closed
+                                        <?php the_field( 'timing_heading' ); ?> <br>
+                                        <?php the_field( 'timing_detail' ); ?>
                                      </div>
                                  </div>
                              </div>

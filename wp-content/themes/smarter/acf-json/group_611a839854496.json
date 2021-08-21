@@ -323,7 +323,7 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "table",
+            "layout": "row",
             "button_label": "",
             "sub_fields": [
                 {
@@ -347,8 +347,8 @@
                 },
                 {
                     "key": "field_611aaaefdb243",
-                    "label": "Icon Image",
-                    "name": "icon_image",
+                    "label": "Offer Icon Image",
+                    "name": "offer_icon_image",
                     "type": "image",
                     "instructions": "png image",
                     "required": 0,
@@ -371,9 +371,9 @@
                 },
                 {
                     "key": "field_6120958925139",
-                    "label": "Icon Hover",
-                    "name": "icon_hover",
-                    "type": "text",
+                    "label": "Offer Icon Hover",
+                    "name": "offer_icon_hover",
+                    "type": "image",
                     "instructions": "png image",
                     "required": 0,
                     "conditional_logic": 0,
@@ -382,11 +382,16 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 },
                 {
                     "key": "field_611aacfddb244",
@@ -408,6 +413,25 @@
                     "new_lines": ""
                 }
             ]
+        },
+        {
+            "key": "field_6120a4c9afe86",
+            "label": "View more services link",
+            "name": "view_more_services_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_611aad44985c6",
@@ -567,8 +591,8 @@
         },
         {
             "key": "field_611aadfb985ce",
-            "label": "Features",
-            "name": "features",
+            "label": "Why Features",
+            "name": "why_features",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -586,8 +610,8 @@
             "sub_fields": [
                 {
                     "key": "field_611aae0a985cf",
-                    "label": "Feature",
-                    "name": "feature",
+                    "label": "Feature Lists",
+                    "name": "feature_lists",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -624,7 +648,7 @@
         {
             "key": "field_611aae2d985d1",
             "label": "Get Quote Heading",
-            "name": "",
+            "name": "get_quote_heading",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -997,5 +1021,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1629526174
+    "modified": 1629529318
 }
