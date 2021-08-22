@@ -4,12 +4,13 @@
 // full page scroll
 
 var myFullpage = new fullpage('#fullpage', {
-  navigation: true,
-  navigationPosition: 'right',
-  responsiveWidth: 768,
-  paralax:true,
-  onLeave: function(origin, destination, direction){
-  var loadedSection = this;
+	scrollBar: true,
+	navigation: true,
+	navigationPosition: 'right',
+	responsiveWidth: 768,
+	paralax:true,
+	onLeave: function(origin, destination, direction){
+	var loadedSection = this;
   
     switch(destination.index){
       case 0:

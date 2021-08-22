@@ -195,7 +195,7 @@ get_header();?>
                         $offer_hover_image = $hover_icon_image['url'];
                     }
                     ?>
-                    <div class="col-lg-4 col-md-4 col-12"  >
+                    <div class="col-lg-4 col-md-4 col-12 wow fadeInUp"  >
                          <div class="list-card ">
                              <ul>
                                  <li class="img-servicesIcon">
@@ -243,7 +243,7 @@ get_header();?>
              <div class="smarter-homeContentes">
                  <div class="row">
                      <div class="col-md-4">
-                         <div class="smarter-home2 ">
+                         <div class="smarter-home2 wow fadeInLeft">
                             <?php
                             $smarter_home_image = get_template_directory_uri().'/assets/images/smarters-home2.jpg';
                             $smarte_home = get_field( 'left_image' );
@@ -255,7 +255,7 @@ get_header();?>
                          </div>
                      </div>
                      <div class="col-md-8">
-                         <div class="smarter-home1">
+                         <div class="smarter-home1 wow fadeInRight">
                          <?php
                             $smarter_home_right = get_template_directory_uri().'/assets/images/smarters-home1.jpg';
                             $smarter_right = get_field( 'top_image' );
@@ -278,8 +278,8 @@ get_header();?>
      <!-- Why Choose -->
      <div class="section why-choose z-index-1" id="section3">
  
-         <div class="why-choosebg">
-             <div class="contents-whyChoose">
+         <div class="why-choosebg " >
+             <div class="contents-whyChoose wow fadeInLeft">
                  <div class="why-choseTitle">
                      <h4><?php the_field( 'why_smarter_sub_title' ); ?></h4>
                      <div class="sec-title">
@@ -305,7 +305,7 @@ get_header();?>
                  </div>
              </div>
          </div>
-         <video autoplay muted loop id="myVideo" class="fullscreen-bg__video" >
+         <video autoplay muted loop id="myVideo" class="fullscreen-bg__video" loop muted playsinline data-autoplay >
              <source src="<?php echo get_template_directory_uri();?>/assets/images/banner/video.MP4" type="video/mp4" autoplay onplay="handleFirstPlay(event)">
          </video>
          
@@ -333,8 +333,8 @@ get_header();?>
  
       <!-- why solar Energy -->
      <div class="section z-index-1 fullcoverPage why-solarEnergy" id="section5" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/images/smarters-home3.jpg">
-         <div class="right-solar">
-             <img src="<?php echo get_template_directory_uri();?>/assets/images/solar.png" alt="">
+         <div class="right-solar wow fadeInLeft">
+             <img class="" src="<?php echo get_template_directory_uri();?>/assets/images/solar.png" alt="">
          </div>
          <div class="container-fluid">
              <div class="energy-contents">
@@ -344,7 +344,7 @@ get_header();?>
                          <div class="sec-title text-center">
                              <h3><?php the_field( 'why_solar_title' ); ?></h3>
                          </div>
-                         <div class="list-why">
+                         <div class="list-why wow fadeInRight">
                             <?php
                             // Check rows exists.
                             if ( have_rows( 'why_solar_features' ) ) :

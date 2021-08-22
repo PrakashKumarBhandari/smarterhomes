@@ -228,7 +228,7 @@ img {
 }
 
 .list-menu ul li {
-    margin: 32px 0;
+    /* margin: 32px 0; */
     position: relative;
 }
 
@@ -1087,8 +1087,42 @@ color: var(--white);
 }
 
 
-
-
-
 /* end about page */
 
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.quite-btn input {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1vmin 3vmin;
+    border: 0.1vmin solid var(--primary-color);
+}
+
+.submit-btn input {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.8vmin 4vmin;
+    border: 0.1vmin solid var(--primary-color);
+}
+
+.ft-form textarea{
+    background: rgba(0,0,0,0);
+    color: var(--white) !important;
+    font-weight: 400 !important;
+}
+
+.ft-form textarea:focus{
+    background: rgba(0,0,0,0);
+    color: var(--white) !important;
+    font-weight: 400 !important;
+    color: var(--white) !important;
+    background-color: rgba(0,0,0,0);
+    border-color: var(--secondary-color) !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 0%);
+}
