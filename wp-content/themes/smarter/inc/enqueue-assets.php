@@ -10,6 +10,7 @@ function smarter_homes_scripts() {
 	wp_enqueue_style( 'animate', get_template_directory_uri() . '/assets/css/animate.min.css', array(), _S_VERSION, 'all' );
 	wp_enqueue_style( 'aos', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), _S_VERSION, 'all' );
 	wp_enqueue_style( 'hover', get_template_directory_uri() . '/assets/css/hover.css', array(), _S_VERSION, 'all' );
+	wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/assets/css/custom.css', array(), _S_VERSION, 'all' );
 	wp_enqueue_style( 'style-main', get_template_directory_uri() . '/assets/css/style.css', array(), _S_VERSION, 'all' );
 	wp_enqueue_style( 'responsive', get_template_directory_uri() . '/assets/css/responsive.css', array(), _S_VERSION, 'all' );
 

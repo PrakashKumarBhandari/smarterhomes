@@ -12,13 +12,22 @@ get_header();?>
              </a>
          </div>
          <div class="list-menu">
-             <ul>
+                <?php 
+                  wp_nav_menu(
+                    array(
+                      'menu'      => 'main-menu',
+                      'container'      => 'ul',
+                    )
+                  );
+                ?>
+
+             <!-- <ul>
                  <li><a href="">Home <span><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/right-arrow.svg" alt=""></span></a><hr></li>
                  <li><a href="">Abou Us <span><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/right-arrow.svg" alt=""></span></a><hr></li>
                  <li><a href="">Services <span><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/right-arrow.svg" alt=""></span></a><hr></li>
                  <li><a href="">Career <span><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/right-arrow.svg" alt=""></span></a><hr></li>
                  <li><a href="">Contact Us <span><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/right-arrow.svg" alt=""></span></a><hr></li>
-             </ul>
+             </ul> -->
          </div>
  
          <div class="social-lst">
@@ -446,13 +455,21 @@ get_header();?>
                      </div>
                      <div class="col-md-7 ">
                          <div class="footer-menu">
-                             <ul>
+                            <?php 
+                            wp_nav_menu(
+                                array(
+                                'menu'      => 'Footer-Menu',
+                                'container'      => 'ul',
+                                )
+                            );
+                            ?>
+                             <!-- <ul>
                                  <li><a href="">Home</a></li>
                                  <li><a href="">About Us</a></li>
                                  <li><a href="">Services</a></li>
                                  <li><a href="">Careers</a></li>
                                  <li><a href="">Contact Us</a></li>
-                             </ul>
+                             </ul> -->
                          </div>
                      </div>
                  </div>

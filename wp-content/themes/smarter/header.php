@@ -29,13 +29,23 @@
               </button>
             
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="auto-mg navbar-nav mr-auto ml-auto">                  
+                <?php 
+                  wp_nav_menu(
+                    array(
+                      'menu'      => 'main-menu',
+                      'container'      => 'ul',
+                      'menu_class'           => 'auto-mg navbar-nav mr-auto ml-auto',
+                      'container_class'      => 'auto-mg navbar-nav mr-auto ml-auto',
+                    )
+                  );
+                ?>
+                <!-- <ul class="auto-mg navbar-nav mr-auto ml-auto">                  
                   <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
                   <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
                   <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
                   <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
                   <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-                </ul>
+                </ul> -->
                 <div class="menu-socialList navicons">
                     <div class="title_icons">Stay Connected</div>
                       <ul class="nav-ul">
