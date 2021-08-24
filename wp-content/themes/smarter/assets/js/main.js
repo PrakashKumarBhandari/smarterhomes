@@ -59,12 +59,13 @@ const $rootNav = $('.cSlider--nav');
 
  $rootSingle.slick({
 	slide: '.cSlider__item',
+	autoplay:true,
  	slidesToShow: 1,
  	slidesToScroll: 1,
  	arrows: true,
  	fade: false,
  	adaptiveHeight: true,
- 	infinite: false,
+ 	infinite: true,
 	useTransform: true,
  	speed: 400,
  	autoplay: true,
