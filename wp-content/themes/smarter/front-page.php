@@ -122,7 +122,7 @@ get_header();?>
                                                     while ( have_rows( 'buttons_and_links' ) ) :
                                                     the_row();
                                                     ?>
-                                                    <li><a class="<?php if($counter_link=='1'){ echo 'gt-quote';}else{ echo'wy-choose';} ?> " href="<?php the_sub_field( 'button_link' ); ?>"><?php the_sub_field( 'button_label' ); ?></a></li>
+                                                    <li><a class="<?php if($counter_link=='1'){ echo 'gt-quote';}else{ echo'wy-choose hvr-sweep-to-right ';} ?> " href="<?php the_sub_field( 'button_link' ); ?>"><?php the_sub_field( 'button_label' ); ?></a></li>
                                                     <?php
                                                     $counter_link++;
                                                     endwhile;

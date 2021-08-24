@@ -67,6 +67,8 @@ const $rootNav = $('.cSlider--nav');
  	infinite: false,
 	useTransform: true,
  	speed: 400,
+ 	autoplay: true,
+	autoplaySpeed: 6000,
  	cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
  });
 
