@@ -63,13 +63,13 @@ const $rootNav = $('.cSlider--nav');
  	slidesToShow: 1,
  	slidesToScroll: 1,
  	arrows: true,
- 	fade: false,
+ 	fade: true,
  	adaptiveHeight: true,
  	infinite: true,
 	useTransform: true,
- 	speed: 400,
+ 	speed: 1000,
  	autoplay: true,
-	autoplaySpeed: 6000,
+	autoplaySpeed: 5000,
  	cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
  });
 
@@ -143,3 +143,13 @@ const $rootNav = $('.cSlider--nav');
 			fitToSection: false
 		});
 	});
+
+
+
+
+
+
+
+
+
+

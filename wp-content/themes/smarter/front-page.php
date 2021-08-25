@@ -62,74 +62,73 @@ get_header();?>
             }
             ?>
             <div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo $slider_big_image;?>');">
-                    <div class="container-fluid">
-                        
-                        <?php
-                        $get_banner_hover_block = get_sub_field( 'banner_hover_block' );
-                        if(!empty($get_banner_hover_block['title'])){
-                        ?>
-                        <div class="wrappertiptip">
-                            <div class="click-tool">
-                                <div class="tooltip-example">
-                                    <div class="tooltip1">		
-                                        <div class="plus_btn">
-                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
-                                        </div>
-                                        <div class="tooltip__content  ntx3">                                        
-                                                <div class="taghead">
-                                                    <span><?php echo $get_banner_hover_block['heading'];?></span>
-                                                </div>
-                                                <div class="click-title">
-                                                   <?php echo $get_banner_hover_block['title'];?>
-                                                </div>
-                                                <div class="click-para">
-                                                    <?php echo $get_banner_hover_block['short_detail'];?>
-                                                </div>
-                                                <?php
-                                                if(!empty($get_banner_hover_block['detail_link'])){
-                                                ?>
-                                                <div class="btn-click">
-                                                    <a href="<?php echo $get_banner_hover_block['detail_link'];?>">More Details   ></a>
-                                                </div>
-                                                <?php 
-                                                }?>                                         
+                <div class="container-fluid">
+                    
+                    <?php
+                    $get_banner_hover_block = get_sub_field( 'banner_hover_block' );
+                    if(!empty($get_banner_hover_block['title'])){
+                    ?>
+                    <div class="wrappertiptip">
+                        <div class="click-tool">
+                            <div class="tooltip-example">
+                                <div class="tooltip1">		
+                                    <div class="plus_btn">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
+                                    </div>
+                                    <div class="tooltip__content  ntx3">                                        
+                                            <div class="taghead">
+                                                <span><?php echo $get_banner_hover_block['heading'];?></span>
                                             </div>
-                                        </div>                             
-                                </div>
+                                            <div class="click-title">
+                                                <?php echo $get_banner_hover_block['title'];?>
+                                            </div>
+                                            <div class="click-para">
+                                                <?php echo $get_banner_hover_block['short_detail'];?>
+                                            </div>
+                                            <?php
+                                            if(!empty($get_banner_hover_block['detail_link'])){
+                                            ?>
+                                            <div class="btn-click">
+                                                <a href="<?php echo $get_banner_hover_block['detail_link'];?>">More Details   ></a>
+                                            </div>
+                                            <?php 
+                                            }?>                                         
+                                        </div>
+                                    </div>                             
                             </div>
                         </div>
-                        <?php
-                        }
-                        ?>                        
-                        <div class="slider-caption">
-                            <div class="slider-contents">
-                                <div class="slider-heading wow fadeInLeft" data-wow-delay="0.6s">
-                                    <h2><?php the_sub_field( 'banner_title' ); ?></h2>
-                                </div>
-                                <div class="slider-para wow fadeInLeft" data-wow-delay="0.7s">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="sld-cns">
-                                            <?php the_sub_field( 'banner_short_detail' ); ?>
-                                            </div>
+                    </div>
+                    <?php
+                    }
+                    ?>                        
+                    <div class="slider-caption">
+                        <div class="slider-contents">
+                            <div class="slider-heading " data-wow-delay="0.6s">
+                                <h2><?php the_sub_field( 'banner_title' ); ?></h2>
+                            </div>
+                            <div class="slider-para" data-wow-delay="0.7s">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="sld-cns">
+                                        <?php the_sub_field( 'banner_short_detail' ); ?>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="sld-bts">
-                                                <ul>
-                                                    <?php
-                                                    $counter_link = 1;
-                                                    if ( have_rows( 'buttons_and_links' ) ) :
-                                                    while ( have_rows( 'buttons_and_links' ) ) :
-                                                    the_row();
-                                                    ?>
-                                                    <li><a class="<?php if($counter_link=='1'){ echo 'gt-quote';}else{ echo'wy-choose hvr-sweep-to-right ';} ?> " href="<?php the_sub_field( 'button_link' ); ?>"><?php the_sub_field( 'button_label' ); ?></a></li>
-                                                    <?php
-                                                    $counter_link++;
-                                                    endwhile;
-                                                    endif;
-                                                    ?>
-                                                </ul>
-                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="sld-bts">
+                                            <ul>
+                                                <?php
+                                                $counter_link = 1;
+                                                if ( have_rows( 'buttons_and_links' ) ) :
+                                                while ( have_rows( 'buttons_and_links' ) ) :
+                                                the_row();
+                                                ?>
+                                                <li><a class="<?php if($counter_link=='1'){ echo 'gt-quote';}else{ echo'wy-choose hvr-sweep-to-right ';} ?> " href="<?php the_sub_field( 'button_link' ); ?>"><?php the_sub_field( 'button_label' ); ?></a></li>
+                                                <?php
+                                                $counter_link++;
+                                                endwhile;
+                                                endif;
+                                                ?>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -137,6 +136,7 @@ get_header();?>
                         </div>
                     </div>
                 </div>
+            </div>
              <?php
             endwhile;
             endif;

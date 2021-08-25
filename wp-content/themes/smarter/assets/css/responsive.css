@@ -437,12 +437,108 @@
         display: flex;
     }
 
-    /* .menu-socialList ul li {
-        background-color: var(--primary-color);
-        margin-right:1.6vmin;
-        padding: 0.4vmin;
-        border-radius: 5.0vmin;
-    } */
+
+    /* FadeInUpSD */
+
+    .fadeInUpSD {
+        -webkit-animation-name: fadeInUpSD;
+        animation-name: fadeInUpSD;
+    }
+
+    .slick-active .slider-caption .slider-heading h2 {
+        animation-name: fadeInUpSD;
+        animation-duration: 2s;
+        opacity: 1;
+        width: 100%;
+        /* padding: 10px 20px 30px 0; */
+    }
+
+    .slick-active .sld-cns {
+        animation-name: fadeInUpSD;
+        animation-duration: 2s;
+        opacity: 1;
+        width: 100%;
+        /* padding: 10px 20px 30px 0; */
+    }
+
+    @-webkit-keyframes fadeInUpSD {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+        }
+      
+        100% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      
+      @keyframes fadeInUpSD {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+        }
+      
+        100% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      /* END FadeInUpSD */
+
+
+
+      /* FadeInUpSlow */
+
+    .fadeInUpslow {
+        -webkit-animation-name: fadeInUpslow;
+        animation-name: fadeInUpslow;
+    }
+
+    .slick-active .sld-bts {
+        animation-name: fadeInUpslow;
+        animation-duration: 2s;
+        opacity: 1;
+        width: 100%;
+    }
+ 
+    @-webkit-keyframes fadeInUpslow {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+        }
+      
+        100% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      
+      @keyframes fadeInUpslow {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+        }
+      
+        100% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      /* END FadeInUpSlow */
+
+
+
+
+
 
     .stay-connected{
         color: var(--white);
