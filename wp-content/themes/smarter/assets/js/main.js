@@ -119,7 +119,7 @@ const $rootNav = $('.cSlider--nav');
 
 
 
-// WOW JS
+	// WOW JS
 	$(window).on ('load', function (){
         wow = new WOW(
 			{
@@ -137,19 +137,26 @@ const $rootNav = $('.cSlider--nav');
 	AOS.init();  // AOS initiation
 
 
-	$(document).ready(function() {
-		$('#fullpage').fullpage({
-			autoScrolling: false,
-			fitToSection: false
-		});
-	});
+(function($) {
+    $('.accordion').addClass('active').next().slideDown();
 
+    $('.accordion a').click(function(j) {
+        var dropDown = $(this).closest('li').find('p');
 
+        $(this).closest('.accordion').find('p').not(dropDown).slideUp();
 
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).closest('.accordion').find('a.active').removeClass('active');
+            $(this).addClass('active');
+        }
 
+        dropDown.stop(false, true).slideToggle();
 
-
-
+        j.preventDefault();
+    });
+})(jQuery);
 
 
 

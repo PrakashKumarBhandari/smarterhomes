@@ -135,6 +135,17 @@ img {
     z-index: 9;
 }
 
+.primary-color{
+    color: var(--primary-color);
+}
+
+.secondary-color{
+    color: var(--secondary-color);
+}
+
+.displayblock{
+    display: block !important;
+}
 
 /* .container-fluid{
     padding: 0 60px;
@@ -914,10 +925,6 @@ color: var(--white);
 
 
 
-
-
-
-
 /* about page */
 
 .halfbanner {
@@ -1043,7 +1050,7 @@ color: var(--white);
     font-size: 16px;
     line-height: 36px;
     margin-bottom: 36px;
-  
+
 }
 
 .left-btn a{
@@ -1085,6 +1092,158 @@ color: var(--white);
 .respon_contentList{
     margin-top: 50px;
 }
+
+    /* section */
+    .section-subTitle h1{
+        font-size: 24px;
+        color: var(--primary-color);
+        text-transform: uppercase;
+    }
+
+    .section-subTitle h1::after {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 4px;
+        background-color: var(--primary-color);
+        bottom: 0;
+        transform: translate(-50%, 50%);
+        left: 50%;
+    }
+
+    .section-subTitle {
+        margin-bottom: 70px;
+    }
+
+    .ov-cardTitle{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* .accodion-conents .card .card-header{
+        border: 1px solid var(--primary-color);
+        background-color: var(--primary-color);
+        border-bottom: none;
+        color: var(--white);
+    } */
+
+    .accodion-conents .card {
+        margin-bottom: 12px;
+        font-size: 14px !important;
+    }
+    
+    .accodion-conents .card .card-header h5{
+        font-size: 16px;
+        color: var(--black100);
+        font-weight: 600;
+    }
+
+    .accodion-conents .card .collapse .card-body{
+        font-size: 14px;
+    }
+
+    .accodion-conents .card .collapsed {
+        background-color: var(--white);
+        border: 1px solid rgba(0,0,0,.125);
+    }
+    
+
+
+
+
+     .accordion {
+        /* margin: 0 auto 100px; */
+        border-top: 1px solid #d9e5e8;
+        margin-top: 30px ;
+      }
+
+      .accordion li {
+        /* border-bottom: 1px solid #d9e5e8; */
+        position: relative;
+        margin-bottom: 10px;
+      }
+
+      .accordion li p {
+        display: none;
+        padding: 20px;
+        color: var(--black60);
+        border: 1px solid var(--black10);
+      }
+
+      .accordion a {
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        font-weight: 600;
+        line-height: 30px;
+        font-size: 16px !important;
+        font-size: 0.875rem;
+        user-select: none;
+        border: 1px solid var(--black10);
+        color: var(--black100);
+        padding: 10px 30px 10px 24px;
+        position: relative;
+    }
+
+    .accordion a:after {
+        width: 8px;
+        height: 8px;
+        border-right: 1px solid var(--primary-color);
+        border-bottom: 1px solid var(--primary-color);
+        position: absolute;
+        right: 24px;
+        content: " ";
+        transform: rotate(-45deg);
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        top: 45%;
+    }
+
+    .accordion p {
+        font-size: 13px;
+        font-size: 0.8125rem;
+        line-height: 2;
+        padding: 10px;
+    }
+      
+    .accordion a.active:after {
+        transform: rotate(45deg);
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        border-right: 1px solid var(--white);
+        border-bottom: 1px solid var(--white);
+    }
+
+    .accordion a.active{
+        background-color: var(--primary-color);
+        color: var(--white);
+        border: 1px solid var(--primary-color);
+    }
+
+    .accordion a:hover{
+        color: var(--black100) !important;
+    }
+
+    .accordion a.active:hover{
+        color: var(--white) !important;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* end about page */
