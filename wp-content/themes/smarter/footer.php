@@ -10,6 +10,87 @@
  */
 
 ?>
+    <?php
+    $footer_bg_image = get_template_directory_uri().'/assets/images/banner/footer-banner.jpg';
+    $footer_block_image = get_field( 'footer_bg_image' );
+    if ( ! empty( $footer_block_image ) ) {
+    $footer_bg_image = $footer_block_image['url'];
+    }
+    ?>                        
+
+      <!-- Footer -->
+     <div class="section z-index-1 footer-fullpage fullcoverPage" id="section6" style="background-image: url(<?php echo $footer_bg_image;?>">
+         <div class="footer-form">
+             <div class="container-fluid">             
+             <?php echo do_shortcode('[contact-form-7 id="142" title="Contact form"]'); ?>
+             </div>
+         </div>
+ 
+         <div class="div contact-footer">
+             <div class="container-fluid">
+                 <div class="row">
+                     <div class="col-md-3">
+                         <div class="img-footer">
+                            <img src="<?php echo get_template_directory_uri();?>/assets/images/logo-footer.png" alt="">
+                         </div>
+                     </div>
+                     <div class="col-md-9">
+                         <div class="cnt-footer">
+                             <div class="row">
+                                 <div class="col-md-3 col-6">
+                                     <div class="smarter-location">
+                                         Our Location <br>
+                                         <?php the_field( 'our_location' ); ?>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-3 col-6">
+                                     <div class="smarter-location">
+                                         Phone: <br>
+                                         <?php the_field( 'phone' ); ?>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-3 col-6">
+                                     <div class="smarter-location">
+                                         Email Address: <br>
+                                         <?php the_field( 'email_address' ); ?>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-3 col-6">
+                                     <div class="smarter-location">
+                                        <?php the_field( 'timing_heading' ); ?> <br>
+                                        <?php the_field( 'timing_detail' ); ?>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+ 
+         <div class="btm-footer">
+             <div class="container-fluid">
+                 <div class="row">
+                     <div class="col-md-5 order-md-first order-last">
+                         <div class="copyright">© Copyright <?php echo date('Y');?>   |   All Rights Reserved</div>
+                     </div>
+                     <div class="col-md-7 ">
+                         <div class="footer-menu">
+                            <?php 
+                            wp_nav_menu(
+                                array(
+                                'menu'      => 'Footer-Menu',
+                                'container'      => 'ul',
+                                )
+                            );
+                            ?>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+</div>
 </div>
 <?php wp_footer(); ?>
 </body>

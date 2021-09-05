@@ -173,7 +173,6 @@ get_header();?>
     <section class="section" id="section4">
       
     </section>
-</div>
 
 
 <?php get_footer(); ?>

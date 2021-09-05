@@ -3,6 +3,22 @@
     "title": "Contact Us",
     "fields": [
         {
+            "key": "field_6134951e50293",
+            "label": "Banner",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
             "key": "field_612d1ab49268e",
             "label": "Banner Heading",
             "name": "banner_heading",
@@ -175,6 +191,25 @@
                     "maxlength": ""
                 }
             ]
+        },
+        {
+            "key": "field_6134952c54b2f",
+            "label": "Contact Us Map",
+            "name": "contact_us_map",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
         }
     ],
     "location": [
@@ -194,5 +229,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1630346135
+    "modified": 1630836087
 }
