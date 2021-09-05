@@ -11,8 +11,6 @@
 
 ?>
     <?php
-    $footer_bg_image = get_template_directory_uri().'/assets/images/banner/footer-banner.jpg';
-    
     $options = get_option( 'theme_options' );
     ?>                        
 

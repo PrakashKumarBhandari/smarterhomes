@@ -157,7 +157,7 @@
             "key": "field_61310a886cae2",
             "label": "Sub Heading",
             "name": "sub_heading",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -168,9 +168,9 @@
             },
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
         },
         {
             "key": "field_61310ab76cae3",
@@ -210,7 +210,7 @@
         {
             "key": "field_61310c546caef",
             "label": "Block BG Image",
-            "name": "block_bg_image",
+            "name": "r_block_bg_image",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -235,7 +235,7 @@
             "key": "field_61310ae76cae5",
             "label": "Responsibility Short Detail",
             "name": "responsibility_short_detail",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -246,9 +246,9 @@
             },
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": ""
         },
         {
             "key": "field_61310b046cae6",
@@ -347,7 +347,7 @@
         {
             "key": "field_61310c756caf0",
             "label": "Block BG Image",
-            "name": "block_bg_image",
+            "name": "q_block_bg_image",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -372,7 +372,7 @@
             "key": "field_61310bd16caeb",
             "label": "Qualifications Short Detail",
             "name": "qualifications_short_detail",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -383,9 +383,9 @@
             },
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
         },
         {
             "key": "field_61310be36caec",
@@ -484,7 +484,7 @@
         {
             "key": "field_61310cf06caf3",
             "label": "Block BG Image",
-            "name": "block_bg_image",
+            "name": "a_block_bg_image",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -601,5 +601,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1630604783
+    "modified": 1630866895
 }
