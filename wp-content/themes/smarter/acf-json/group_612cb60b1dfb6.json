@@ -327,9 +327,9 @@
     "location": [
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "45"
+                "value": "template\/about-design-tpl.php"
             }
         ]
     ],
@@ -341,5 +341,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1630322866
+    "modified": 1630945338
 }
