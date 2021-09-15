@@ -7,7 +7,7 @@ get_header();?>
      <div class="wrapper-slideHeader wow fadeInLeft" data-wow-delay="0.6s">
          <div class="side-menu">
          <div class="logo">
-             <a href="#">
+             <a href="<?php echo site_url();?>">
                  <img src="<?php echo get_template_directory_uri();?>/assets/images/logo.png" alt="">
              </a>
          </div>
@@ -20,24 +20,18 @@ get_header();?>
                     )
                   );
                 ?>
-
-             <!-- <ul>
-                 <li><a href="">Home <span><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/right-arrow.svg" alt=""></span></a><hr></li>
-                 <li><a href="">Abou Us <span><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/right-arrow.svg" alt=""></span></a><hr></li>
-                 <li><a href="">Services <span><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/right-arrow.svg" alt=""></span></a><hr></li>
-                 <li><a href="">Career <span><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/right-arrow.svg" alt=""></span></a><hr></li>
-                 <li><a href="">Contact Us <span><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/right-arrow.svg" alt=""></span></a><hr></li>
-             </ul> -->
          </div>
- 
+        <?php 
+        $home_options = get_option( 'theme_options' );
+        ?>
          <div class="social-lst">
              <div class="stay-connected">
                  Stay-Connected
              </div>
              <div class="menu-socialList">
                  <ul>
-                     <li><a href=""><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/facebook.svg" alt=""></a></li>
-                     <li><a href=""><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/twitter.svg" alt=""></a></li>
+                     <li><a href="<?php  if ( isset( $home_options['input_fb_link'] ) ) { echo $home_options['input_fb_link']; } ?>"><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/facebook.svg" alt=""></a></li>
+                     <li><a href="<?php  if ( isset( $home_options['input_twitter_link'] ) ) { echo $home_options['input_twitter_link']; } ?>"><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/twitter.svg" alt=""></a></li>
                  </ul>
              </div>
          </div>

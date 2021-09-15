@@ -77,7 +77,7 @@ while ( have_posts() ) : the_post();
                             <div class="row">
                                 <div class="col-md-5 wow fadeInLeft">
                                     <div class="img-tabsContents">
-                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/others/image1.JPG" alt="">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/others/image1.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-7 wow fadeInRight">
@@ -98,7 +98,7 @@ while ( have_posts() ) : the_post();
                             <div class="row">
                                 <div class="col-md-5">
                                     <div class="img-tabsContents">
-                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/others/image1.JPG" alt="">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/others/image1.jpg" alt="">
                                     </div>
                                 </div>
 
