@@ -39,9 +39,8 @@ get_header();?>
      </div>
      <!-- end header -->
     
-  
-  <!-- Slider -->
-  <div class="section banner z-index9 " id="section0">
+      <!-- Slider -->
+      <div class="section banner z-index9 " id="section0">
         <div class="cSlider cSlider--single ">
 			<div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo get_template_directory_uri();?>/assets/images/banner/banner1.jpg');">
                 <div class="container-fluid">
@@ -53,7 +52,7 @@ get_header();?>
                                     <div class="plus_btn opentooltip">
                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
                                     </div>
-                                    <div class="tooltip__content0 tooltipbox  ntx3">                                    
+                                    <div class="tooltip__content tooltipbox  ntx3">                                    
                                         <div class="taghead">
                                             <span>Features</span>
                                         </div>
@@ -441,7 +440,6 @@ get_header();?>
 		</div>
     </div>
     <!-- end slider -->
-    
 
 
      <!-- Service -->
@@ -569,18 +567,18 @@ get_header();?>
  
                  <div class="list-whyChose">
                      <ul>
-                        <?php
-                        // Check rows exists.
-                        if ( have_rows( 'why_features' ) ) :
-                        // Loop through rows.
-                        while ( have_rows( 'why_features' ) ) :
-                        the_row();
-                        ?> 
-                        <li><?php the_sub_field( 'feature_lists' ); ?></li>
-                        <?php
-                        endwhile;
-                        endif;
-                        ?>
+                            <?php
+                            // Check rows exists.
+                            if ( have_rows( 'why_features' ) ) :
+                            // Loop through rows.
+                            while ( have_rows( 'why_features' ) ) :
+                            the_row();
+                            ?> 
+                            <li><?php the_sub_field( 'feature_lists' ); ?></li>
+                            <?php
+                            endwhile;
+                            endif;
+                            ?>
                      </ul>
                  </div>
              </div>
@@ -668,20 +666,6 @@ get_header();?>
      </div>
      <!-- end why solar Energy -->
  
-    	     <!-- Sticky footer -->	
-    <div class="sticky_footer">	
-            <div class="container-fluid">	
-                <div class="btn_stikcyWrapper">	
-                    <div class="sticky_contactBtn">	
-                        <a href="<?php echo site_url('/contact-us');?>">Contact Us</a>	
-                    </div>
-
-                    <div class="sticky_gaqtBtn">	
-                        <a href="<?php echo site_url('/');?>">Get Quote</a>	
-                    </div>	
-            </div>	
-        </div>	
-    </div>	
-     <!-- sticky footer -->                        
+                            
 
 <?php get_footer(); ?>

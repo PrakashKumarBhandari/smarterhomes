@@ -59,7 +59,6 @@ const $rootNav = $('.cSlider--nav');
 
  $rootSingle.slick({
 	slide: '.cSlider__item',
-	autoplay:true,
  	slidesToShow: 1,
  	slidesToScroll: 1,
  	arrows: true,
@@ -158,5 +157,10 @@ const $rootNav = $('.cSlider--nav');
     });
 })(jQuery);
 
+
+jQuery(".opentooltip").click(function(){
+	// jQuery(".tooltipbox").hide();
+	jQuery(this).siblings(".tooltipbox").toggle();
+})
 
 
