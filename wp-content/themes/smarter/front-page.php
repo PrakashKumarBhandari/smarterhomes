@@ -44,6 +44,7 @@ get_header();?>
      <div class="section banner z-index9 " id="section0">
          <div class="cSlider cSlider--single ">
              <?php
+             $banner_slider_count = 0;
             // Check rows exists.
             if ( have_rows( 'banner_slider_image' ) ) :
             // Loop through rows.
@@ -66,15 +67,16 @@ get_header();?>
                         <div class="click-tool">
                             <div class="tooltip-example">
                                 <?php 
+                                $random = rand() % 2;
                                 $counter_hover = 0;
-                                while ( have_rows( 'banner_hover_block' ) ) :
+                                while ( have_rows( 'banner_hover_block' ) ) :                                
                                 the_row();
                                 ?>
-                                <div class="tooltip<?php echo $counter_hover;?>">		
+                                <div class="tooltip<?php echo $counter_hover;?>"  >		
                                     <div class="plus_btn<?php echo $counter_hover;?> opentooltip">
                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
                                     </div>
-                                    <div class="tooltip__content<?php echo $counter_hover;?> tooltipbox  ntx3">                                    
+                                    <div class="tooltip__content<?php echo $counter_hover;?> tooltipbox  ntx3" <?php if($random == $counter_hover){ echo "style='display:block;'"; } ?>>                                    
                                         <div class="taghead">
                                             <span><?php the_sub_field( 'heading' ); ?></span>
                                         </div>
@@ -136,7 +138,8 @@ get_header();?>
                     </div>
                 </div>
             </div>
-             <?php
+            <?php
+            $random = 1;
             endwhile;
             endif;
             ?>

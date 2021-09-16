@@ -159,7 +159,8 @@ const $rootNav = $('.cSlider--nav');
 
 
 jQuery(".opentooltip").click(function(){
-	// jQuery(".tooltipbox").hide();
+	//jQuery(".tooltipbox").hide();
+	// jQuery(this).siblings(".tooltipbox").hide();
 	jQuery(this).siblings(".tooltipbox").toggle();
 })
 
