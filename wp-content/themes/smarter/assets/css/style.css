@@ -1289,14 +1289,6 @@ color: var(--white);
     }
 
 
-
-
-
-
-
-
-
-
 /* end about page */
 
 .fp-section.fp-table, .fp-slide.fp-table {
@@ -1339,4 +1331,39 @@ color: var(--white);
 
 .img-tabsContents img {
     width: 96% !important;
+}
+
+
+/* sticky footer */
+.sticky_footer{
+    background-color: var(--black100);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 999;
+    padding: 1.4vmin;
+}
+
+.sticky_contactBtn a {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.0vmin 1.8vmin;
+    border-radius: 0.4vmin;
+    font-size: 1.2vmin;
+}
+
+.sticky_gaqtBtn a{
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.0vmin 1.8vmin;
+    border-radius: 0.4vmin;
+    font-size: 1.2vmin;
+    margin-left: 3.5vmin
+
+}
+
+.btn_stikcyWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
