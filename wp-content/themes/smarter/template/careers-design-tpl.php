@@ -71,6 +71,7 @@ while ( have_posts() ) : the_post();
                         <a class="nav-link" id="pills-architect-tab" data-toggle="pill" href="#pills-architect" role="tab" aria-controls="pills-architect" aria-selected="false">Architect</a>
                     </li>
                 </ul>
+                
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-manager" role="tabpanel" aria-labelledby="pills-manager-tab">
                         <div class="tabs-cnts">
