@@ -40,115 +40,93 @@ get_header();?>
      <!-- end header -->
     
   
-  <!-- Slider -->
-  <div class="section banner z-index9 " id="section0">
-        <div class="cSlider cSlider--single ">
-			<div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo get_template_directory_uri();?>/assets/images/banner/banner1.jpg');">
+     <!-- Slider -->
+     <div class="section banner z-index9 " id="section0">
+         <div class="cSlider cSlider--single ">
+             <?php
+            // Check rows exists.
+            if ( have_rows( 'banner_slider_image' ) ) :
+            // Loop through rows.
+            while ( have_rows( 'banner_slider_image' ) ) :
+            the_row();
+            $slider_big_image  = '';
+            $slider_thumbnail_image  = '';
+            $slider_images = get_sub_field( 'slider_image' );
+            if ( ! empty( $slider_images ) ) {
+                $slider_big_image = $slider_images['url'];
+            }
+            ?>
+            <div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo $slider_big_image;?>');">
                 <div class="container-fluid">
                     
-                    <div class="wrappertiptip">
+                    <?php
+                    if ( have_rows( 'banner_hover_block' ) ) :                  
+                    ?>
+                    <div class="wrappertiptip ">
                         <div class="click-tool">
                             <div class="tooltip-example">
-                                <div class="tooltip0">		
-                                    <div class="plus_btn opentooltip">
+                                <?php 
+                                $counter_hover = 0;
+                                while ( have_rows( 'banner_hover_block' ) ) :
+                                the_row();
+                                ?>
+                                <div class="tooltip<?php echo $counter_hover;?>">		
+                                    <div class="plus_btn<?php echo $counter_hover;?> opentooltip">
                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
                                     </div>
-                                    <div class="tooltip__content0 tooltipbox  ntx3">                                    
+                                    <div class="tooltip__content<?php echo $counter_hover;?> tooltipbox  ntx3">                                    
                                         <div class="taghead">
-                                            <span>Features</span>
+                                            <span><?php the_sub_field( 'heading' ); ?></span>
                                         </div>
                                         <div class="click-title">
-                                            first - first - How We Compare?
+                                            <?php the_sub_field( 'title' ); ?>
                                         </div>
                                         <div class="click-para">
-                                            You are reading dummy texts for this layout. Contents are for display only.
+                                            <?php the_sub_field( 'short_detail' ); ?>
                                         </div>
                                         <div class="btn-click">
-                                            <a href="">More Details   ></a>
+                                            <a href="<?php the_sub_field( 'detail_link' ); ?>">More Details   ></a>
                                         </div>                                    
                                     </div>
                                 </div>
+                                <?php
+                                $counter_hover++;
+                                endwhile;
+                                ?>
 
-                                <div class="tooltip1">		
-                                    <div class="plus_btn1 opentooltip">
-                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
-                                    </div>
-                                    <div class="tooltip__content1 tooltipbox  ntx3">                                    
-                                        <div class="taghead">
-                                            <span>Features</span>
-                                        </div>
-                                        <div class="click-title">
-                                            first - second tooltip - How We Compare?
-                                        </div>
-                                        <div class="click-para">
-                                            You are reading dummy texts for this layout. Contents are for display only.
-                                        </div>
-                                        <div class="btn-click">
-                                            <a href="">More Details   ></a>
-                                        </div>                                    
-                                    </div>
-                                </div>
-                                
-                                <div class="tooltip2">		
-                                    <div class="plus_btn2 opentooltip">
-                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
-                                    </div>
-                                    <div class="tooltip__content2 tooltipbox  ntx3">                                    
-                                        <div class="taghead">
-                                            <span>Features</span>
-                                        </div>
-                                        <div class="click-title">
-                                            first - third tooltip - How We Compare?
-                                        </div>
-                                        <div class="click-para">
-                                            You are reading dummy texts for this layout. Contents are for display only.
-                                        </div>
-                                        <div class="btn-click">
-                                            <a href="">More Details   ></a>
-                                        </div>                                    
-                                    </div>
-                                </div>
-
-                                <div class="tooltip3">		
-                                    <div class="plus_btn3 opentooltip">
-                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
-                                    </div>
-                                    <div class="tooltip__content3 tooltipbox  ntx3">                                    
-                                        <div class="taghead">
-                                            <span>Features</span>
-                                        </div>
-                                        <div class="click-title">
-                                            first - fourth tooltip - How We Compare?
-                                        </div>
-                                        <div class="click-para">
-                                            You are reading dummy texts for this layout. Contents are for display only.
-                                        </div>
-                                        <div class="btn-click">
-                                            <a href="">More Details   ></a>
-                                        </div>                                    
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
-                    
+                    <?php                   
+                    endif;
+                    ?>                       
                     <div class="slider-caption">
                         <div class="slider-contents">
-                            <div class="slider-heading wow fadeInLeft" data-wow-delay="0.6s">
-                                <h2>The Life of Innovations with <span>Solar Panels</span></h2>
+                            <div class="slider-heading " data-wow-delay="0.6s">
+                                <h2><?php the_sub_field( 'banner_title' ); ?></h2>
                             </div>
-                            <div class="slider-para wow fadeInLeft" data-wow-delay="0.7s">
+                            <div class="slider-para" data-wow-delay="0.7s">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="sld-cns">
-                                            These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.
+                                        <?php the_sub_field( 'banner_short_detail' ); ?>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="sld-bts">
                                             <ul>
-                                                <li><a class="gt-quote " href="">Get a Quite Now</a></li>
-                                                <li><a class="wy-choose" href="">Why Choose Now</a></li>
+                                                <?php
+                                                $counter_link = 1;
+                                                if ( have_rows( 'buttons_and_links' ) ) :
+                                                while ( have_rows( 'buttons_and_links' ) ) :
+                                                the_row();
+                                                ?>
+                                                <li><a class="<?php if($counter_link=='1'){ echo 'gt-quote';}else{ echo'wy-choose hvr-sweep-to-right ';} ?> " href="<?php the_sub_field( 'button_link' ); ?>"><?php the_sub_field( 'button_label' ); ?></a></li>
+                                                <?php
+                                                $counter_link++;
+                                                endwhile;
+                                                endif;
+                                                ?>
                                             </ul>
                                         </div>
                                     </div>
@@ -158,289 +136,32 @@ get_header();?>
                     </div>
                 </div>
             </div>
-            <div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo get_template_directory_uri();?>/assets/images/banner/banner2.jpg');">
-                <div class="container-fluid">
-                <div class="wrappertiptip">
-                        <div class="click-tool">
-                            <div class="tooltip-example">
-                                <div class="tooltip0">		
-                                    <div class="plus_btn opentooltip">
-                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
-                                    </div>
-                                    <div class="tooltip__content0 tooltipbox  ntx3">                                    
-                                        <div class="taghead">
-                                            <span>Features</span>
-                                        </div>
-                                        <div class="click-title">
-                                            Second - first - How We Compare?
-                                        </div>
-                                        <div class="click-para">
-                                            You are reading dummy texts for this layout. Contents are for display only.
-                                        </div>
-                                        <div class="btn-click">
-                                            <a href="">More Details   ></a>
-                                        </div>                                    
-                                    </div>
-                                </div>
-
-                                <div class="tooltip1">		
-                                    <div class="plus_btn1 opentooltip">
-                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
-                                    </div>
-                                    <div class="tooltip__content1 tooltipbox  ntx3">                                    
-                                        <div class="taghead">
-                                            <span>Features</span>
-                                        </div>
-                                        <div class="click-title">
-                                            Second - second tooltip - How We Compare?
-                                        </div>
-                                        <div class="click-para">
-                                            You are reading dummy texts for this layout. Contents are for display only.
-                                        </div>
-                                        <div class="btn-click">
-                                            <a href="">More Details   ></a>
-                                        </div>                                    
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-caption">
-                        <div class="slider-contents">
-                            <div class="slider-heading">
-                                <h2 class=>The Life of Innovations with <span>Solar Panels</span></h2>
-                            </div>
-                            <div class="slider-para">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="sld-cns dn-slow fade-up">
-                                           <p>These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="sld-bts fade-inDown ">
-                                            <ul>
-                                                <li><a class="gt-quote" href="">Get a Quite Now</a></li>
-                                                <li><a class="wy-choose" href="">Why Choose Now</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo get_template_directory_uri();?>/assets/images/banner/banner3.jpg');">
-                <div class="container-fluid">
-                       
-                    <div class="wrappertiptip">
-                        <div class="click-tool">
-                            <div class="tooltip-example">
-                                <div class="tooltip0">		
-                                    <div class="plus_btn opentooltip">
-                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
-                                    </div>
-                                    <div class="tooltip__content tooltipbox  ntx3">                                    
-                                        <div class="taghead">
-                                            <span>Features</span>
-                                        </div>
-                                        <div class="click-title">
-                                            Third - first - How We Compare?
-                                        </div>
-                                        <div class="click-para">
-                                            You are reading dummy texts for this layout. Contents are for display only.
-                                        </div>
-                                        <div class="btn-click">
-                                            <a href="">More Details   ></a>
-                                        </div>                                    
-                                    </div>
-                                </div>
-
-                                <div class="tooltip1">		
-                                    <div class="plus_btn1 opentooltip">
-                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
-                                    </div>
-                                    <div class="tooltip__content1 tooltipbox  ntx3">                                    
-                                        <div class="taghead">
-                                            <span>Features</span>
-                                        </div>
-                                        <div class="click-title">
-                                        Third - second tooltip - How We Compare?
-                                        </div>
-                                        <div class="click-para">
-                                            You are reading dummy texts for this layout. Contents are for display only.
-                                        </div>
-                                        <div class="btn-click">
-                                            <a href="">More Details   ></a>
-                                        </div>                                    
-                                    </div>
-                                </div>
-                                
-                                <div class="tooltip2">		
-                                    <div class="plus_btn2 opentooltip">
-                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
-                                    </div>
-                                    <div class="tooltip__content2 tooltipbox  ntx3">                                    
-                                        <div class="taghead">
-                                            <span>Features</span>
-                                        </div>
-                                        <div class="click-title">
-                                        Third - third tooltip - How We Compare?
-                                        </div>
-                                        <div class="click-para">
-                                            You are reading dummy texts for this layout. Contents are for display only.
-                                        </div>
-                                        <div class="btn-click">
-                                            <a href="">More Details   ></a>
-                                        </div>                                    
-                                    </div>
-                                </div>
-
-                                <div class="tooltip3">		
-                                    <div class="plus_btn3 opentooltip">
-                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
-                                    </div>
-                                    <div class="tooltip__content3 tooltipbox  ntx3">                                    
-                                        <div class="taghead">
-                                            <span>Features</span>
-                                        </div>
-                                        <div class="click-title">
-                                        Third - fourth tooltip - How We Compare?
-                                        </div>
-                                        <div class="click-para">
-                                            You are reading dummy texts for this layout. Contents are for display only.
-                                        </div>
-                                        <div class="btn-click">
-                                            <a href="">More Details   ></a>
-                                        </div>                                    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-caption">
-                        <div class="slider-contents">
-                            <div class="slider-heading">
-                                <h2>The Life of Innovations with <span>Solar Panels</span></h2>
-                            </div>
-                            <div class="slider-para">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="sld-cns">
-                                            <p>These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="sld-bts">
-                                            <ul>
-                                                <li><a class="gt-quote" href="">Get a Quite Now</a></li>
-                                                <li><a class="wy-choose" href="">Why Choose Now</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo get_template_directory_uri();?>/assets/images/banner/banner4.jpg');">
-                <div class="container-fluid">
-                <div class="wrappertiptip">
-                        <div class="click-tool">
-                            <div class="tooltip-example">
-                                <div class="tooltip0">		
-                                    <div class="plus_btn opentooltip">
-                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
-                                    </div>
-                                    <div class="tooltip__content tooltipbox  ntx3">                                    
-                                        <div class="taghead">
-                                            <span>Features</span>
-                                        </div>
-                                        <div class="click-title">
-                                            Fourth - first - How We Compare?
-                                        </div>
-                                        <div class="click-para">
-                                            You are reading dummy texts for this layout. Contents are for display only.
-                                        </div>
-                                        <div class="btn-click">
-                                            <a href="">More Details   ></a>
-                                        </div>                                    
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-caption">
-                        <div class="slider-contents">
-                            <div class="slider-heading">
-                                <h2 class="">The Life of Innovations with <span>Solar Panels</span></h2>
-                            </div>
-                            <div class="slider-para">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="sld-cns dn-slow fade-up">
-                                           <p>These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="sld-bts fade-inDown ">
-                                            <ul>
-                                                <li><a class="gt-quote" href="">Get a Quite Now</a></li>
-                                                <li><a class="wy-choose" href="">Why Choose Now</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo get_template_directory_uri();?>/assets/images/banner/banner5.jpg');">
-                <div class="container-fluid">
-                    <div class="slider-caption">
-                        <div class="slider-contents">
-                            <div class="slider-heading">
-                                <h2>The Life of Innovations with <span>Solar Panels</span></h2>
-                            </div>
-                            <div class="slider-para">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="sld-cns">
-                                           <p>These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="sld-bts">
-                                            <ul>
-                                                <li><a class="gt-quote" href="">Get a Quite Now</a></li>
-                                                <li><a class="wy-choose" href="">Why Choose Now</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         
-		</div>
-
-        <div class="cSlider cSlider--nav slider-rightPanel wow fadeInRight" data-wow-delay="0.6s">
-			<div class="cSlider__item"><img src="<?php echo get_template_directory_uri();?>/assets/images/banner/banner1.jpg" alt=""></div>
-            <div class="cSlider__item"><img src="<?php echo get_template_directory_uri();?>/assets/images/banner/banner2.jpg" alt=""></div>
-            <div class="cSlider__item"><img src="<?php echo get_template_directory_uri();?>/assets/images/banner/banner3.jpg" alt=""></div>
-            <div class="cSlider__item"><img src="<?php echo get_template_directory_uri();?>/assets/images/banner/banner4.jpg" alt=""></div>
-            <div class="cSlider__item"><img src="<?php echo get_template_directory_uri();?>/assets/images/banner/banner5.jpg" alt=""></div>
-		</div>
-    </div>
-    <!-- end slider -->
+             <?php
+            endwhile;
+            endif;
+            ?>
+         </div>
+ 
+         <div class="cSlider cSlider--nav slider-rightPanel wow fadeInRight" data-wow-delay="0.6s">
+         <?php
+            if ( have_rows( 'banner_slider_image' ) ) :
+            while ( have_rows( 'banner_slider_image' ) ) :
+            the_row();
+            $slider_big_image  = '';
+            $slider_thumbnail_image  = '';
+            $slider_images = get_sub_field( 'slider_image' );
+            if ( ! empty( $slider_images ) ) {
+                $slider_big_image = $slider_images['sizes']['thumbnail'];
+            }
+            ?>
+            <div class="cSlider__item"><img src="<?php echo $slider_big_image;?>" alt=""></div>             
+            <?php
+            endwhile;
+            endif;
+            ?>
+         </div>
+     </div>
+     <!-- end slider -->
     
 
 
