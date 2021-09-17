@@ -375,22 +375,7 @@ get_header();?>
      <!-- end why solar Energy -->
  
     	     <!-- Sticky footer -->	
-    <div class="sticky_footer">	
-            <div class="container-fluid">	
-                <div class="btn_stikcyWrapper">	
-                    <div class="sticky_contactBtn">	
-                        <a href="<?php echo site_url('/contact-us');?>">Contact Us</a>	
-                    </div>
-                    <div class="sticky_contactBtn">	
-                        <a href="<?php echo site_url('/contact-us');?>">Why Choose Us</a>	
-                    </div>
 
-                    <div class="sticky_gaqtBtn">	
-                        <a href="<?php echo site_url('/');?>">Get a Quote Now</a>	
-                    </div>	
-            </div>	
-        </div>	
-    </div>	
      <!-- sticky footer -->                        
 
 <?php get_footer(); ?>
