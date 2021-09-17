@@ -159,9 +159,20 @@ const $rootNav = $('.cSlider--nav');
 
 
 jQuery(".opentooltip").click(function(){
-	//jQuery(".tooltipbox").hide();
+	// jQuery(".tooltipbox").fadeOut();
 	// jQuery(this).siblings(".tooltipbox").hide();
-	jQuery(this).siblings(".tooltipbox").toggle();
+	// jQuery(this).siblings(".tooltipbox").animate({
+	// 	height: 'toggle'
+	//   }).fadeToggle(500);
+	jQuery(".tooltipbox").fadeOut();
+	// jQuery(this).siblings(".tooltipbox").animate({
+	// 	width: [ "toggle", "easein" ],
+	// 	height: [ "toggle", "easein" ],
+	// 	easing: "easein"
+	//   }).slidesToShow();
+
+	jQuery(this).siblings(".tooltipbox").slideToggle(500);
+
 })
 
 

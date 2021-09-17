@@ -109,29 +109,11 @@ get_header();?>
                             </div>
                             <div class="slider-para" data-wow-delay="0.7s">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <div class="sld-cns">
                                         <?php the_sub_field( 'banner_short_detail' ); ?>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="sld-bts">
-                                            <ul>
-                                                <?php
-                                                $counter_link = 1;
-                                                if ( have_rows( 'buttons_and_links' ) ) :
-                                                while ( have_rows( 'buttons_and_links' ) ) :
-                                                the_row();
-                                                ?>
-                                                <li><a class="<?php if($counter_link=='1'){ echo 'gt-quote';}else{ echo'wy-choose hvr-sweep-to-right ';} ?> " href="<?php the_sub_field( 'button_link' ); ?>"><?php the_sub_field( 'button_label' ); ?></a></li>
-                                                <?php
-                                                $counter_link++;
-                                                endwhile;
-                                                endif;
-                                                ?>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    </div>                                    
                                 </div>
                             </div>
                         </div>
@@ -399,9 +381,12 @@ get_header();?>
                     <div class="sticky_contactBtn">	
                         <a href="<?php echo site_url('/contact-us');?>">Contact Us</a>	
                     </div>
+                    <div class="sticky_contactBtn">	
+                        <a href="<?php echo site_url('/contact-us');?>">Why Choose Us</a>	
+                    </div>
 
                     <div class="sticky_gaqtBtn">	
-                        <a href="<?php echo site_url('/');?>">Get Quote</a>	
+                        <a href="<?php echo site_url('/');?>">Get a Quote Now</a>	
                     </div>	
             </div>	
         </div>	

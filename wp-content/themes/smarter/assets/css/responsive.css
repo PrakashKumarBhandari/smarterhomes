@@ -1378,7 +1378,7 @@
         padding: 1.0vmin 1.8vmin;
         border-radius: 0.4vmin;
         font-size: 1.2vmin;
-        margin-left: 3.5vmin
+        /* margin-left: 3.5vmin */
         transition: all .3s ease-in;
 
     }
