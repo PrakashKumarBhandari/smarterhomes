@@ -59,7 +59,6 @@ const $rootNav = $('.cSlider--nav');
 
  $rootSingle.slick({
 	slide: '.cSlider__item',
-	autoplay:true,
  	slidesToShow: 1,
  	slidesToScroll: 1,
  	arrows: true,
@@ -69,6 +68,7 @@ const $rootNav = $('.cSlider--nav');
 	useTransform: true,
  	speed: 1000,
  	autoplay: false,
+	 lazyLoad: 'progressive',
 	autoplaySpeed: 5000,
  	cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
  });
@@ -158,5 +158,23 @@ const $rootNav = $('.cSlider--nav');
     });
 })(jQuery);
 
+
+
+jQuery(".opentooltip").click(function(){
+	// jQuery(".tooltipbox").fadeOut();
+	// jQuery(this).siblings(".tooltipbox").hide();
+	// jQuery(this).siblings(".tooltipbox").animate({
+	// 	height: 'toggle'
+	//   }).fadeToggle(500);
+	jQuery(".tooltipbox").fadeOut();
+	// jQuery(this).siblings(".tooltipbox").animate({
+	// 	width: [ "toggle", "easein" ],
+	// 	height: [ "toggle", "easein" ],
+	// 	easing: "easein"
+	//   }).slidesToShow();
+
+	jQuery(this).siblings(".tooltipbox").slideToggle(500);
+
+})
 
 

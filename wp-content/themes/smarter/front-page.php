@@ -38,7 +38,6 @@ get_header();?>
      </div>
      </div>
      <!-- end header -->
-    
   
      <!-- Slider -->
 
@@ -79,17 +78,9 @@ get_header();?>
                             </div>
                             <div class="slider-para wow fadeInLeft" data-wow-delay="0.7s">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <div class="sld-cns">
                                             These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="sld-bts">
-                                            <ul>
-                                                <li><a class="gt-quote " href="">Get a Quite Now</a></li>
-                                                <li><a class="wy-choose" href="">Why Choose Now</a></li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -103,21 +94,13 @@ get_header();?>
                     <div class="slider-caption">
                         <div class="slider-contents">
                             <div class="slider-heading">
-                                <h2 class="text-center fadeInDown">The Life of Innovations with <span>Solar Panels</span></h2>
+                                <h2 class="fadeInDown">The Life of Innovations with <span>Solar Panels</span></h2>
                             </div>
                             <div class="slider-para">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="sld-cns dn-slow fade-up text-center">
+                                        <div class="sld-cns dn-slow fade-up">
                                            <p>These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="sld-bts fade-inDown btn_stikcyWrapper">
-                                            <ul>
-                                                <li><a class="gt-quote" href="">Get a Quite Now</a></li>
-                                                <li><a class="wy-choose" href="">Why Choose Now</a></li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -160,17 +143,9 @@ get_header();?>
                             </div>
                             <div class="slider-para wow fadeInLeft" data-wow-delay="0.7s">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <div class="sld-cns">
                                             These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="sld-bts">
-                                            <ul>
-                                                <li><a class="gt-quote " href="">Get a Quite Now</a></li>
-                                                <li><a class="wy-choose" href="">Why Choose Now</a></li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -212,21 +187,13 @@ get_header();?>
                     <div class="slider-caption">
                         <div class="slider-contents">
                             <div class="slider-heading">
-                                <h2 class="text-center fadeInDown">The Life of Innovations with <span>Solar Panels</span></h2>
+                                <h2 class="fadeInDown">The Life of Innovations with <span>Solar Panels</span></h2>
                             </div>
                             <div class="slider-para">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="sld-cns dn-slow fade-up text-center">
+                                        <div class="sld-cns dn-slow fade-up">
                                            <p>These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="sld-bts fade-inDown btn_stikcyWrapper">
-                                            <ul>
-                                                <li><a class="gt-quote" href="">Get a Quite Now</a></li>
-                                                <li><a class="wy-choose" href="">Why Choose Now</a></li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -244,17 +211,9 @@ get_header();?>
                             </div>
                             <div class="slider-para wow fadeInLeft" data-wow-delay="0.7s">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <div class="sld-cns">
                                             These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="sld-bts">
-                                            <ul>
-                                                <li><a class="gt-quote " href="">Get a Quite Now</a></li>
-                                                <li><a class="wy-choose" href="">Why Choose Now</a></li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
