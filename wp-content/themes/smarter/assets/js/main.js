@@ -67,7 +67,7 @@ const $rootNav = $('.cSlider--nav');
  	infinite: true,
 	useTransform: true,
  	speed: 1000,
- 	autoplay: true,
+ 	autoplay: false,
 	 lazyLoad: 'progressive',
 	autoplaySpeed: 5000,
  	cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
@@ -161,12 +161,13 @@ const $rootNav = $('.cSlider--nav');
 
 
 jQuery(".opentooltip").click(function(){
-	// jQuery(".tooltipbox").fadeOut();
+	
+	 jQuery(".tooltipbox").fadeOut();
 	// jQuery(this).siblings(".tooltipbox").hide();
 	// jQuery(this).siblings(".tooltipbox").animate({
 	// 	height: 'toggle'
 	//   }).fadeToggle(500);
-	jQuery(".tooltipbox").fadeOut();
+	// jQuery(".tooltipbox").fadeOut();
 	// jQuery(this).siblings(".tooltipbox").animate({
 	// 	width: [ "toggle", "easein" ],
 	// 	height: [ "toggle", "easein" ],

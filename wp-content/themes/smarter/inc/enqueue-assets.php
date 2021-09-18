@@ -11,7 +11,10 @@ function smarter_homes_scripts() {
 	wp_enqueue_style( 'aos', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), _S_VERSION, 'all' );
 	wp_enqueue_style( 'hover', get_template_directory_uri() . '/assets/css/hover.css', array(), _S_VERSION, 'all' );
 	wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/assets/css/custom.css', array(), _S_VERSION, 'all' );
+	wp_enqueue_style( 'slider_animation', get_template_directory_uri() . '/assets/css/slider_animation.css', array(), _S_VERSION, 'all' );
+	
 	wp_enqueue_style( 'style-main', get_template_directory_uri() . '/assets/css/style.css', array(), _S_VERSION, 'all' );
+
 	wp_enqueue_style( 'responsive', get_template_directory_uri() . '/assets/css/responsive.css', array(), _S_VERSION, 'all' );
 
 	wp_enqueue_script( 'smarter-jquery', get_template_directory_uri() . '/assets/js/jquery-3.6.0.min.js', array(), _S_VERSION, true );
@@ -22,6 +25,8 @@ function smarter_homes_scripts() {
 	wp_enqueue_script( 'smarter-fullpage-scroll', get_template_directory_uri() . '/assets/js/fullpage.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'smarter-main', get_template_directory_uri() . '/assets/js/main.js', array(), _S_VERSION, true );
 	
+
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		// wp_enqueue_script( 'comment-reply' );
 	}
