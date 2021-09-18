@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Career */ 
+/*  Career */ 
 
 get_header();?>
 
@@ -53,7 +53,13 @@ while ( have_posts() ) : the_post();
 
     <section class="section " id="section1">
         <div class="container-fluid">
-            <!-- <div class="tabs-contents">
+            <div class="section-title wow fadeInUp">
+                <div class="main-title text-center">
+                    <h2><?php the_field( 'heading' ); ?></h2>
+                </div>
+                <div class="section-paragraph mx-w830 text-center margin-center mt-20"><?php the_field( 'sub_heading' ); ?></div>
+            </div>
+            <div class="tabs-contents">
                 <ul class="nav nav-pills mb-3 nav-justified wow fadeInUp" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" id="pills-manager-tab" data-toggle="pill" href="#pills-manager" role="tab" aria-controls="pills-managerr" aria-selected="true">Manager</a>
@@ -132,119 +138,7 @@ while ( have_posts() ) : the_post();
                         </div>
                     </div>
                 </div>
-            </div> -->
-            
-            <div class="jobs-wrapper">
-                <div class="heading_jobs">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="main-title ">
-                                <h5><span class="mg-l">Filter Jobs</span><span class="mg-l color-grn ">(43)</span></h5>
-                            </div>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="advs-search">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="select-control">
-                                            <select class="form-control ">
-                                                <option>Area of Interest</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="select-control">
-                                            <select class="form-control ">
-                                                <option>City</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="select-control">
-                                            <select class="form-control">
-                                                <option>State</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="select-control">
-                                        <div class="jb-btn">
-                                            <input type="submit" value="Search" class="wpcf7-form-control wpcf7-submit" disabled=""><span class="ajax-loader"></span>
-                                        </div>
-                                        </div>  
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="listing-jobs">
-                    <table class="table">
-                        <thead class="thead-dark">
-                            <tr>
-                            <th scope="col">Position Title</th>
-                            <th scope="col">Department</th>
-                            <th scope="col">City</th>
-                            <th scope="col">Status</th>
-                            <th scope="col"></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Account Specialist</th>
-                                <td>Account Specialist</td>
-                                <td>Mandeville</td>
-                                <td>LA</td>
-                                <td class="last_td"><a class="hvr-sweep-to-right" href="#">Apply</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Account Specialist</th>
-                                <td>Account Specialist</td>
-                                <td>Mandeville</td>
-                                <td>LA</td>
-                                <td class="last_td"><a class="hvr-sweep-to-right" href="#">Apply</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Account Specialist</th>
-                                <td>Account Specialist</td>
-                                <td>Mandeville</td>
-                                <td>LA</td>
-                                <td class="last_td"><a class="hvr-sweep-to-right" href="#">Apply</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Account Specialist</th>
-                                <td>Account Specialist</td>
-                                <td>Mandeville</td>
-                                <td>LA</td>
-                                <td class="last_td"><a class="hvr-sweep-to-right" href="#">Apply</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Account Specialist</th>
-                                <td>Account Specialist</td>
-                                <td>Mandeville</td>
-                                <td>LA</td>
-                                <td class="last_td"><a class="hvr-sweep-to-right" href="#">Apply</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Account Specialist</th>
-                                <td>Account Specialist</td>
-                                <td>Mandeville</td>
-                                <td>LA</td>
-                                <td class="last_td"><a class="hvr-sweep-to-right" href="#">Apply</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Account Specialist</th>
-                                <td>Account Specialist</td>
-                                <td>Mandeville</td>
-                                <td>LA</td>
-                                <td class="last_td"><a class="hvr-sweep-to-right" href="#">Apply</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
             </div>
-            
             
         </div>
     </section>

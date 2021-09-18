@@ -78,7 +78,7 @@ get_header();?>
                                     <div class="plus_btn<?php echo $counter_hover;?> opentooltip">
                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
                                     </div>
-                                    <div class="tooltip__content<?php echo $counter_hover;?> tooltipbox  ntx3" <?php /* if($random == $counter_hover){ echo "style='display:block;'"; } */ ?>>                                    
+                                    <div class="tooltip__content<?php echo $counter_hover;?> tooltipbox  ntx3" <?php  if($random == $counter_hover){ echo "style='display:block;'"; }  ?>>                                    
                                         <div class="taghead">
                                             <span><?php the_sub_field( 'heading' ); ?></span>
                                         </div>
