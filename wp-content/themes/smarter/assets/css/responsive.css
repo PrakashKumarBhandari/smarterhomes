@@ -1189,6 +1189,10 @@
         padding: 1.6vmin 7vmin;
     }
 
+    .jb-btn{
+        text-align: right;
+    }
+
     .smartser-form .form-control {
         display: block;
         width: 100%;
@@ -2569,7 +2573,48 @@ ul.auto-mg li a:hover{
     background-color: var(--secondary-color) !important;
 }
 
-
-
+.select-control .form-control {
+    border-radius: 0;
+    height: calc(1.5em + 0.75rem + 1.1vmin);
+    font-size: 1.4vmin;
+}
 /*  */
 
+.jb-btn input {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1vmin 3vmin;
+    border: 0.1vmin solid var(--primary-color);
+}
+
+.listing-jobs .table .thead-dark th {
+    color: rgb(36, 36, 36);
+    background-color: #dbedff;
+    border-color: rgba(0,0,0,0);
+    font-size: 1.6vmin;
+    font-weight: 500;
+}
+
+.listing-jobs{
+    margin-top: 3vmin;
+}
+
+.listing-jobs table tbody tr td a {
+    background-color: var(--white);
+    border: 0.1vmin solid var(--primary-color);
+    padding: 1.2vmin 2.4vmin;
+}
+
+.last_td{
+    text-align: right;
+}
+
+.listing-jobs .table td, .table th {
+    padding: .75rem;
+    vertical-align: baseline;
+    border-top: 1px solid #dee2e6;
+}
+
+.listing-jobs .table tbody tr {
+    border-bottom: 1px solid #b3b3b3 !important;
+}
