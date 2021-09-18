@@ -59,7 +59,6 @@ const $rootNav = $('.cSlider--nav');
 
  $rootSingle.slick({
 	slide: '.cSlider__item',
-	autoplay:true,
  	slidesToShow: 1,
  	slidesToScroll: 1,
  	arrows: true,
@@ -68,7 +67,8 @@ const $rootNav = $('.cSlider--nav');
  	infinite: true,
 	useTransform: true,
  	speed: 1000,
- 	autoplay: true,
+ 	autoplay: false,
+	 lazyLoad: 'progressive',
 	autoplaySpeed: 5000,
  	cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
  });
@@ -157,6 +157,4 @@ const $rootNav = $('.cSlider--nav');
         j.preventDefault();
     });
 })(jQuery);
-
-
 

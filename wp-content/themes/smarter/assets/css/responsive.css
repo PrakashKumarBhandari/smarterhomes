@@ -453,6 +453,14 @@
         /* padding: 10px 20px 30px 0; */
     }
 
+    .slick-active .slider-caption .slider-heading h2.fadeInDown {
+        animation-name: fadeInUp;
+        animation-duration: 2s;
+        opacity: 1;
+        width: 100%;
+        /* padding: 10px 20px 30px 0; */
+    }
+
     .slick-active .sld-cns {
         animation-name: fadeInUpSD;
         animation-duration: 2s;
@@ -2547,3 +2555,8 @@ ul.auto-mg li a:hover{
 .menu-socialList ul li a img:hover {
     background-color: var(--secondary-color) !important;
 }
+
+
+
+/*  */
+
