@@ -41,6 +41,244 @@ get_header();?>
     
   
      <!-- Slider -->
+
+     <div class="section banner z-index9 " id="section0">
+        <div class="cSlider cSlider--single ">
+			<div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo get_template_directory_uri();?>/assets/images/banner/banner1.jpg');">
+                <div class="container-fluid">
+                    <!-- <div class="wrappertiptip">
+                        <div class="click-tool">
+                            <div class="tooltip-example">
+                                <div class="tooltip1">		
+                                    <div class="plus_btn">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
+                                    </div>
+                                    <div class="tooltip__content  ntx3">
+                                        <div class="taghead">
+                                            <span>Features</span>
+                                        </div>
+                                        <div class="click-title">
+                                            How We Compare?
+                                        </div>
+                                        <div class="click-para">
+                                            You are reading dummy texts for this layout. Contents are for display only.
+                                        </div>
+                                        <div class="btn-click">
+                                            <a href="">More Details   ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <div class="slider-caption">
+                        <div class="slider-contents">
+                            <div class="slider-heading wow fadeInLeft" data-wow-delay="0.6s">
+                                <h2>The Life of Innovations with <span>Solar Panels</span></h2>
+                            </div>
+                            <div class="slider-para wow fadeInLeft" data-wow-delay="0.7s">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="sld-cns">
+                                            These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="sld-bts">
+                                            <ul>
+                                                <li><a class="gt-quote " href="">Get a Quite Now</a></li>
+                                                <li><a class="wy-choose" href="">Why Choose Now</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo get_template_directory_uri();?>/assets/images/banner/banner2.jpg');">
+                <div class="container-fluid">
+                    <div class="slider-caption">
+                        <div class="slider-contents">
+                            <div class="slider-heading">
+                                <h2 class="text-center fadeInDown">The Life of Innovations with <span>Solar Panels</span></h2>
+                            </div>
+                            <div class="slider-para">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="sld-cns dn-slow fade-up text-center">
+                                           <p>These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="sld-bts fade-inDown btn_stikcyWrapper">
+                                            <ul>
+                                                <li><a class="gt-quote" href="">Get a Quite Now</a></li>
+                                                <li><a class="wy-choose" href="">Why Choose Now</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo get_template_directory_uri();?>/assets/images/banner/banner3.jpg');">
+                <div class="container-fluid">
+                    <!-- <div class="wrappertiptip">
+                        <div class="click-tool">
+                            <div class="tooltip-example">
+                                <div class="tooltip1">		
+                                    <div class="plus_btn">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
+                                    </div>
+                                    <div class="tooltip__content  ntx3">
+                                        <div class="taghead">
+                                            <span>Features</span>
+                                        </div>
+                                        <div class="click-title">
+                                            How We Compare?
+                                        </div>
+                                        <div class="click-para">
+                                            You are reading dummy texts for this layout. Contents are for display only.
+                                        </div>
+                                        <div class="btn-click">
+                                            <a href="">More Details   ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="slider-caption">
+                        <div class="slider-contents">
+                            <div class="slider-heading wow fadeInLeft" data-wow-delay="0.6s">
+                                <h2>The Life of Innovations with <span>Solar Panels</span></h2>
+                            </div>
+                            <div class="slider-para wow fadeInLeft" data-wow-delay="0.7s">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="sld-cns">
+                                            These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="sld-bts">
+                                            <ul>
+                                                <li><a class="gt-quote " href="">Get a Quite Now</a></li>
+                                                <li><a class="wy-choose" href="">Why Choose Now</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo get_template_directory_uri();?>/assets/images/banner/banner4.jpg');">
+                <div class="container-fluid">
+                    <!-- <div class="wrappertiptip">
+                        <div class="click-tool">
+                            <div class="tooltip-example">
+                                <div class="tooltip1">		
+                                    <div class="plus_btn">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
+                                    </div>
+                                    <div class="tooltip__content  ntx3">
+                                       
+                                            <div class="taghead">
+                                                <span>Features</span>
+                                            </div>
+                                            <div class="click-title">
+                                                How We Compare?
+                                            </div>
+                                            <div class="click-para">
+                                                You are reading dummy texts for this layout. Contents are for display only.
+                                            </div>
+                                            <div class="btn-click">
+                                                <a href="">More Details   ></a>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                            
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="slider-caption">
+                        <div class="slider-contents">
+                            <div class="slider-heading">
+                                <h2 class="text-center fadeInDown">The Life of Innovations with <span>Solar Panels</span></h2>
+                            </div>
+                            <div class="slider-para">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="sld-cns dn-slow fade-up text-center">
+                                           <p>These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="sld-bts fade-inDown btn_stikcyWrapper">
+                                            <ul>
+                                                <li><a class="gt-quote" href="">Get a Quite Now</a></li>
+                                                <li><a class="wy-choose" href="">Why Choose Now</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cSlider__item fullcoverPage" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(40,40,40,0.11528361344537819) 25%) ,url('<?php echo get_template_directory_uri();?>/assets/images/banner/banner5.jpg');">
+                <div class="container-fluid">
+                <div class="slider-caption">
+                        <div class="slider-contents">
+                            <div class="slider-heading wow fadeInLeft" data-wow-delay="0.6s">
+                                <h2>The Life of Innovations with <span>Solar Panels</span></h2>
+                            </div>
+                            <div class="slider-para wow fadeInLeft" data-wow-delay="0.7s">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="sld-cns">
+                                            These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="sld-bts">
+                                            <ul>
+                                                <li><a class="gt-quote " href="">Get a Quite Now</a></li>
+                                                <li><a class="wy-choose" href="">Why Choose Now</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+		</div>
+
+        <div class="cSlider cSlider--nav slider-rightPanel wow fadeInRight" data-wow-delay="0.6s">
+			<div class="cSlider__item"><img src="<?php echo get_template_directory_uri();?>/assets/images/banner/banner1.jpg" alt=""></div>
+            <div class="cSlider__item"><img src="<?php echo get_template_directory_uri();?>/assets/images/banner/banner2.jpg" alt=""></div>
+            <div class="cSlider__item"><img src="<?php echo get_template_directory_uri();?>/assets/images/banner/banner3.jpg" alt=""></div>
+            <div class="cSlider__item"><img src="<?php echo get_template_directory_uri();?>/assets/images/banner/banner4.jpg" alt=""></div>
+            <div class="cSlider__item"><img src="<?php echo get_template_directory_uri();?>/assets/images/banner/banner5.jpg" alt=""></div>
+		</div>
+    </div>
+
+
+
+
+     <?php /* ?>
      <div class="section banner z-index9 " id="section0">
          <div class="cSlider cSlider--single ">
              <?php
@@ -146,6 +384,7 @@ get_header();?>
             ?>
          </div>
      </div>
+     <?php */?>
      <!-- end slider -->
     
 

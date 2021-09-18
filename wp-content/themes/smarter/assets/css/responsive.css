@@ -1919,15 +1919,15 @@
     -moz-transform-origin: 0 0.1vmin;
     -ms-transform-origin: 0 0.1vmin;
     -o-transform-origin: 0 0.1vmin;
-    /* transform-origin: 0 0.1vmin; */
-    /* background-color: #fff; */
+    transform-origin: 0 0.1vmin;
+    background-color: #fff;
     border-radius: 4px;
     color: #2f2f2f;
    
     font-size: 14px;
     font-weight: normal;
-    /* left: 50%; */
-    /* opacity: 0; */
+    left: 50%;
+    opacity: 0;
     padding: 3.6vmin 4.6vmin;
     pointer-events: none;
     position: absolute;
@@ -1952,15 +1952,15 @@
     -moz-transform-origin: 0 0.1vmin;
     -ms-transform-origin: 0 0.1vmin;
     -o-transform-origin: 0 0.1vmin;
-    /* transform-origin: 0 0.1vmin; */
-    /* background-color: #fff; */
+    transform-origin: 0 0.1vmin;
+    background-color: #fff;
     border-radius: 4px;
     color: #2f2f2f;
    
     font-size: 14px;
     font-weight: normal;
-    /* left: 50%; */
-    /* opacity: 0; */
+    left: 50%;
+    opacity: 0;
     padding: 3.6vmin 4.6vmin;
     pointer-events: none;
     position: absolute;
@@ -1985,15 +1985,15 @@
     -moz-transform-origin: 0 0.1vmin;
     -ms-transform-origin: 0 0.1vmin;
     -o-transform-origin: 0 0.1vmin;
-    /* transform-origin: 0 0.1vmin; */
-    /* background-color: #fff; */
+    transform-origin: 0 0.1vmin;
+    background-color: #fff;
     border-radius: 4px;
     color: #2f2f2f;
     
     font-size: 14px;
     font-weight: normal;
-    /* left: 50%; */
-    /* opacity: 0; */
+    left: 50%;
+    opacity: 0;
     padding: 3.6vmin 4.6vmin;
     pointer-events: none;
     position: absolute;
@@ -2040,7 +2040,7 @@
     width: 40vmin;
 }
 
-  /* .tooltip__content:before {
+  .tooltip__content:before {
     border-color: transparent;
     border-top-color: #fff;
     border-style: solid;
@@ -2053,7 +2053,7 @@
     position: absolute;
     bottom: -20px;
     width: 0;
-  } */
+  }
   .tooltip__content:after {
     content: " ";
     display: block;
@@ -2073,9 +2073,9 @@
     pointer-events: auto;
   }
 
-  /* .wrappertiptip{
+  .wrappertiptip{
       position: relative;
-  } */
+  }
 
 
     /* tooltip end */
