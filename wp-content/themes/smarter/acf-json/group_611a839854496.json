@@ -162,7 +162,7 @@
                     "key": "field_61208e61e280a",
                     "label": "Banner Hover Block",
                     "name": "banner_hover_block",
-                    "type": "group",
+                    "type": "repeater",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -171,7 +171,11 @@
                         "class": "",
                         "id": ""
                     },
-                    "layout": "block",
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 4,
+                    "layout": "table",
+                    "button_label": "",
                     "sub_fields": [
                         {
                             "key": "field_61208e81e280b",
@@ -1021,5 +1025,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1629529318
+    "modified": 1631815920
 }

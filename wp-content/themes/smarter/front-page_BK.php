@@ -38,13 +38,11 @@ get_header();?>
      </div>
      </div>
      <!-- end header -->
-    
-  
+ 
      <!-- Slider -->
      <div class="section banner z-index9 " id="section0">
          <div class="cSlider cSlider--single ">
              <?php
-             $banner_slider_count = 0;
             // Check rows exists.
             if ( have_rows( 'banner_slider_image' ) ) :
             // Loop through rows.
@@ -61,47 +59,68 @@ get_header();?>
                 <div class="container-fluid">
                     
                     <?php
-                    if ( have_rows( 'banner_hover_block' ) ) :                  
+                    $get_banner_hover_block = get_sub_field( 'banner_hover_block' );
+                    if(!empty($get_banner_hover_block['title'])){
                     ?>
-                    <div class="wrappertiptip ">
+                    <div class="wrappertiptip">
                         <div class="click-tool">
                             <div class="tooltip-example">
-                                <?php 
-                                $random = rand() % 2;
-                                $counter_hover = 0;
-                                while ( have_rows( 'banner_hover_block' ) ) :                                
-                                the_row();
-                                ?>
-                                <div class="tooltip<?php echo $counter_hover;?>"  >		
-                                    <div class="plus_btn<?php echo $counter_hover;?> opentooltip">
+                                <div class="tooltip1">		
+                                    <div class="plus_btn">
                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
                                     </div>
-                                    <div class="tooltip__content<?php echo $counter_hover;?> tooltipbox  ntx3" <?php if($random == $counter_hover){ echo "style='display:block;'"; } ?>>                                    
-                                        <div class="taghead">
-                                            <span><?php the_sub_field( 'heading' ); ?></span>
+                                    <div class="tooltip__content  ntx3">                                        
+                                            <div class="taghead">
+                                                <span><?php echo $get_banner_hover_block['heading'];?></span>
+                                            </div>
+                                            <div class="click-title">
+                                                <?php echo $get_banner_hover_block['title'];?>
+                                            </div>
+                                            <div class="click-para">
+                                                <?php echo $get_banner_hover_block['short_detail'];?>
+                                            </div>
+                                            <?php
+                                            if(!empty($get_banner_hover_block['detail_link'])){
+                                            ?>
+                                            <div class="btn-click">
+                                                <a href="<?php echo $get_banner_hover_block['detail_link'];?>">More Details   ></a>
+                                            </div>
+                                            <?php 
+                                            }?>                                         
                                         </div>
-                                        <div class="click-title">
-                                            <?php the_sub_field( 'title' ); ?>
-                                        </div>
-                                        <div class="click-para">
-                                            <?php the_sub_field( 'short_detail' ); ?>
-                                        </div>
-                                        <div class="btn-click">
-                                            <a href="<?php the_sub_field( 'detail_link' ); ?>">More Details   ></a>
-                                        </div>                                    
-                                    </div>
+                                    </div>                             
                                 </div>
-                                <?php
-                                $counter_hover++;
-                                endwhile;
-                                ?>
 
-                            </div>
+                                <div class="tooltip2">		
+                                    <div class="plus_btn">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
+                                    </div>
+                                    <div class="tooltip__content  ntx3">                                        
+                                            <div class="taghead">
+                                                <span><?php echo $get_banner_hover_block['heading'];?></span>
+                                            </div>
+                                            <div class="click-title">
+                                                <?php echo $get_banner_hover_block['title'];?>
+                                            </div>
+                                            <div class="click-para">
+                                                <?php echo $get_banner_hover_block['short_detail'];?>
+                                            </div>
+                                            <?php
+                                            if(!empty($get_banner_hover_block['detail_link'])){
+                                            ?>
+                                            <div class="btn-click">
+                                                <a href="<?php echo $get_banner_hover_block['detail_link'];?>">More Details   ></a>
+                                            </div>
+                                            <?php 
+                                            }?>                                         
+                                        </div>
+                                    </div>                             
+                                </div>
                         </div>
                     </div>
-                    <?php                   
-                    endif;
-                    ?>                       
+                    <?php
+                    }
+                    ?>                        
                     <div class="slider-caption">
                         <div class="slider-contents">
                             <div class="slider-heading " data-wow-delay="0.6s">
@@ -109,19 +128,36 @@ get_header();?>
                             </div>
                             <div class="slider-para" data-wow-delay="0.7s">
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
                                         <div class="sld-cns">
                                         <?php the_sub_field( 'banner_short_detail' ); ?>
                                         </div>
-                                    </div>                                    
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="sld-bts">
+                                            <ul>
+                                                <?php
+                                                $counter_link = 1;
+                                                if ( have_rows( 'buttons_and_links' ) ) :
+                                                while ( have_rows( 'buttons_and_links' ) ) :
+                                                the_row();
+                                                ?>
+                                                <li><a class="<?php if($counter_link=='1'){ echo 'gt-quote';}else{ echo'wy-choose hvr-sweep-to-right ';} ?> " href="<?php the_sub_field( 'button_link' ); ?>"><?php the_sub_field( 'button_label' ); ?></a></li>
+                                                <?php
+                                                $counter_link++;
+                                                endwhile;
+                                                endif;
+                                                ?>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <?php
-            $random = 1;
+             <?php
             endwhile;
             endif;
             ?>
@@ -147,9 +183,7 @@ get_header();?>
          </div>
      </div>
      <!-- end slider -->
-    
-
-
+ 
      <!-- Service -->
      <div class="section section-services fullcoverPage z-index-1" id="section01">
          <div class="container-fluid">
@@ -275,18 +309,18 @@ get_header();?>
  
                  <div class="list-whyChose">
                      <ul>
-                        <?php
-                        // Check rows exists.
-                        if ( have_rows( 'why_features' ) ) :
-                        // Loop through rows.
-                        while ( have_rows( 'why_features' ) ) :
-                        the_row();
-                        ?> 
-                        <li><?php the_sub_field( 'feature_lists' ); ?></li>
-                        <?php
-                        endwhile;
-                        endif;
-                        ?>
+                            <?php
+                            // Check rows exists.
+                            if ( have_rows( 'why_features' ) ) :
+                            // Loop through rows.
+                            while ( have_rows( 'why_features' ) ) :
+                            the_row();
+                            ?> 
+                            <li><?php the_sub_field( 'feature_lists' ); ?></li>
+                            <?php
+                            endwhile;
+                            endif;
+                            ?>
                      </ul>
                  </div>
              </div>
@@ -374,8 +408,6 @@ get_header();?>
      </div>
      <!-- end why solar Energy -->
  
-    	     <!-- Sticky footer -->	
-
-     <!-- sticky footer -->                        
+                            
 
 <?php get_footer(); ?>
