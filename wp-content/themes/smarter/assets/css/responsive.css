@@ -634,6 +634,55 @@
 
 
 
+           /* FadeY*/
+           .fadeY {
+            -webkit-animation-name: fadeUp;
+            animation-name: ffadeUp;
+            color: #fff !important;
+        }
+    
+        .slick-active .fadeY{
+            animation-name: fadeY;
+            animation-duration: 2s;
+            opacity: 1;
+            width: 100%;
+            color: #fff;
+        }
+     
+        @-webkit-keyframes fadeY{
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(500px);
+                transform: translateY(500px);
+            }
+          
+            100% {
+              opacity: 1;
+              -webkit-transform: none;
+              transform: none;
+            }
+          }
+          
+          @keyframes fadeY {
+            0% {
+              opacity: 0;
+              -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+            }
+          
+            100% {
+              opacity: 1;
+              -webkit-transform: none;
+              transform: none;
+            }
+          }
+    
+          /* end fadedown */
+    
+
+
+
+
 
     .stay-connected{
         color: var(--white);

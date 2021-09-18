@@ -138,13 +138,13 @@ get_header();?>
                     </div> -->
                     <div class="slider-caption">
                         <div class="slider-contents">
-                            <div class="slider-heading wow fadeInLeft" data-wow-delay="0.6s">
+                            <div class="slider-heading fadeY" data-wow-delay="0.6s">
                                 <h2>The Life of Innovations with <span>Solar Panels</span></h2>
                             </div>
-                            <div class="slider-para wow fadeInLeft" data-wow-delay="0.7s">
+                            <div class="slider-para " data-wow-delay="0.7s">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="sld-cns">
+                                        <div class="fadeY">
                                             These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page.
                                         </div>
                                     </div>
