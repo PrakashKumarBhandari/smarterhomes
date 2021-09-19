@@ -1955,9 +1955,7 @@
 .tooltip1 .plus_btn img {
     transition: 0.9s;
 }
-.tooltipbox{
-    display: none;
-}
+
 
 
   .tooltip__content:before {

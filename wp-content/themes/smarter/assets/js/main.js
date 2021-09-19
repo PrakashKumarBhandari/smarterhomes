@@ -162,7 +162,7 @@ const $rootNav = $('.cSlider--nav');
 
 jQuery(".opentooltip").click(function(){
 	
-	 jQuery(".tooltipbox").fadeOut();
+	//  jQuery(".tooltipbox").fadeOut();
 	// jQuery(this).siblings(".tooltipbox").hide();
 	// jQuery(this).siblings(".tooltipbox").animate({
 	// 	height: 'toggle'
@@ -173,8 +173,15 @@ jQuery(".opentooltip").click(function(){
 	// 	height: [ "toggle", "easein" ],
 	// 	easing: "easein"
 	//   }).slidesToShow();
-
-	jQuery(this).siblings(".tooltipbox").slideToggle(500);
+	if(jQuery(this).siblings(".tooltipbox").hasClass('showTip')){
+		jQuery(this).addClass('open');
+		jQuery(this).siblings(".tooltipbox").removeClass('showTip');
+	}else{
+		jQuery(this).removeClass('open');
+		jQuery(this).siblings(".tooltipbox").addClass('showTip');
+	}
+	
+	// jQuery(this).siblings(".tooltipbox").slideToggle(500);
 
 })
 

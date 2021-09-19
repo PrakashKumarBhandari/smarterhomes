@@ -1,4 +1,5 @@
 
+
 .plus_btn0 {
     position: absolute;
     /* background-color: rgba(255, 255, 255, 1); */
@@ -125,21 +126,20 @@
     top: -0.9vmin;
     border-radius: 50%;
 }
-.tooltip__content0 {
+
+.tooltip0 .tooltip__content0 {
     -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
     transition: all 200ms ease;
-    /* -webkit-transform: translate3d(-50%, 0%, 0);
-    -moz-transform: translate3d(-50%, 0%, 0);
-    -ms-transform: translate3d(-50%, 0%, 0);
-    -o-transform: translate3d(-50%, 0%, 0);
-    transform: translate3d(158%, -56%, 0);
+     -webkit-transform: translate3d(-150%, 0%, 0);
+    -moz-transform: translate3d(-150%, 0%, 0);
+    -ms-transform: translate3d(-150%, 0%, 0);
+    -o-transform: translate3d(-150%, 0%, 0);
+    transform: translate3d(256%, 131%, 0); 
     -webkit-transform-origin: 0 0.1vmin;
     -moz-transform-origin: 0 0.1vmin;
     -ms-transform-origin: 0 0.1vmin;
-    -o-transform-origin: 0 0.1vmin; */
-
-    transform: translate3d(139%, 133%, 0);
+    -o-transform-origin: 0 0.1vmin;
     border-radius: 4px;
     color: #2f2f2f;   
     font-size: 14px;
@@ -154,7 +154,32 @@
 , rgba(33,33,33,0.9556197478991597) 23%, rgba(33,33,33,0.6054796918767507) 100%);
     color: #fff;
     width: 40vmin;
+    opacity: 0;
 }
+
+.tooltip0 .showTip{
+    transition: opacity 1s;
+    transition: 0.5s;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    transition: all 200ms ease;
+    -webkit-transform: translate3d(-550%, 83%, 0);
+    -moz-transform: translate3d(-550%, 83%, 0);
+    -ms-transform: translate3d(-550%, 83%, 0);
+    -o-transform: translate3d(-550%, 83%, 0);    
+    transform: translate3d(236%, 131%, 0); 
+    /* -webkit-transform: rotateX(30deg) translate3d(-50%, -10%, 0);
+    -moz-transform: rotateX(30deg) translate3d(-50%, -10%, 0);
+    -ms-transform: rotateX(30deg) translate3d(-50%, -10%, 0);
+    -o-transform: rotateX(30deg) translate3d(-50%, -10%, 0);
+    transform: rotateX(10deg) translate3d(236%, 131%, 0); */
+
+    opacity: 1;
+}
+.open{  
+    transform: translate(959%, -300%);
+}
+
 .tooltip__content1 {
     /* -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
