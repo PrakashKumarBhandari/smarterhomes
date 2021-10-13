@@ -13,7 +13,7 @@ get_header();
 while ( have_posts() ) :
 	the_post();
 ?>
-<div  >
+<div class="carrier-content">
     <section class="section" id="section0" >
         <div class="title-banner singlebanner" style="background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 100%, rgba(0,212,255,1) 100%), url(<?php echo get_template_directory_uri();?>/assets/images/banner/heading/banner1.jpg">
             <div class="container-fluid">

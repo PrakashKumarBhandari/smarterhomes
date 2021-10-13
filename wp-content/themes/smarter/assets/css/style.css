@@ -1406,7 +1406,7 @@ akash2046@gmail.com
 .carrier-single-contents ul li{
     list-style: disc;
     padding: 6px 6px 6px 10px;
-    margin-left: 10px;
+    margin-left: 14px;
 }
 .carrier-single-contents h1{
     font-size: 1.7rem;
@@ -1423,4 +1423,39 @@ akash2046@gmail.com
 
 .awsm-job-form h2{
     font-size: 1.5rem;
+}
+
+.carrier-content{
+    height: 95vmin;
+    overflow: auto;
+}
+
+.awsm-job-item:hover{
+    background-color: #e6f7e8;
+}
+
+.awsm-job-more {
+    border: 1px solid #61ce70;
+    padding: 6px;
+    margin: 4px;
+    color: #61ce70;
+}
+.awsm-job-more:hover {
+    background-color: #61ce70;
+    color:#fff;
+}
+.awsm-application-submit-btn{
+    background-color: #61ce70;
+    padding: 9px;
+    margin: 4px;
+    border: none;
+    color: #fff;
+    font-size: 1.9vmin;
+}
+.awsm-job-post-title a:hover{ color: #080a3c!important }
+.awsm-filter-wrap{
+    text-align: center;
+}
+ a.awsm-load-more-btn:hover{
+    color: #61ce70!important;
 }
