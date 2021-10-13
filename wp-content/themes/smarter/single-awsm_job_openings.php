@@ -15,23 +15,22 @@ while ( have_posts() ) :
 ?>
 <div  >
     <section class="section" id="section0" >
-        <div class="title-banner halfbanner" style="background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 100%, rgba(0,212,255,1) 100%), url(<?php echo get_template_directory_uri();?>/assets/images/banner/heading/banner1.jpg">
+        <div class="title-banner singlebanner" style="background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 100%, rgba(0,212,255,1) 100%), url(<?php echo get_template_directory_uri();?>/assets/images/banner/heading/banner1.jpg">
             <div class="container-fluid">
                 <div class="heading-contents">
                     <div class="heading-title wow fadeInDown">
-                        <h1><?php
+                        <?php
 						if ( is_singular() ) :
 							the_title( '<h1 class="entry-title">', '</h1>' );
 						else :
 							the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 						endif;
-						?>
-						</h1>
+						?>						
                     </div>                    
                 </div>
             </div>
         </div>
-        <div class="about-contents ptb-50">
+        <div class="carrier-single-contents ptb-50">
             <div class="container-fluid">
                 <div class="contents-about">
                     <div class="row"> 
