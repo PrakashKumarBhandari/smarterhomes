@@ -231,11 +231,6 @@ img {
     padding: 60px 44px;
     width: 260px;
 }
-
-.logo{
-
-}
-
 .list-menu {
     padding-left: 12px;
     margin-top: 118px;
@@ -265,10 +260,6 @@ img {
     width: 24px;
     border-radius: 50px;
 }
-
-.menu-socialList ul li a{
-}
-
 
 .menu-socialList ul {
     display: flex;
@@ -489,9 +480,7 @@ li.img-servicesIcon span img {
     margin-top: 94px;
 }
 
-.section-paragraph {
-    /* max-width: 700px; */
-}
+
 
 .pgwSlider .ps-current {
     height: 100vh !important;

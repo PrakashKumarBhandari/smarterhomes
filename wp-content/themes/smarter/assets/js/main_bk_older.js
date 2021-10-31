@@ -67,7 +67,7 @@ const $rootNav = $('.cSlider--nav');
  	infinite: true,
 	useTransform: true,
  	speed: 1000,
- 	autoplay: true,
+ 	autoplay: false,
 	 lazyLoad: 'progressive',
 	autoplaySpeed: 5000,
  	cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
@@ -159,40 +159,30 @@ const $rootNav = $('.cSlider--nav');
 })(jQuery);
 
 
-/** All Toggle effect only show hide basedon on click 
-jQuery(".opentooltip").click(function(){	
-	if(jQuery(this).hasClass('open')){
-		jQuery(this).removeClass('open');
-	}else{
-		jQuery(this).addClass('open');
-	}
 
-	if(jQuery(this).siblings(".tooltipbox").hasClass('showTip')){		
-		jQuery(this).siblings(".tooltipbox").removeClass('showTip');
-	}else{		
-		jQuery(this).siblings(".tooltipbox").addClass('showTip');
-	}
-});
-*/
-
-jQuery(".opentooltip").click(function(){	
+jQuery(".opentooltip").click(function(){
 	
-
-	jQuery(".opentooltip").removeClass('open');
-	jQuery(".tooltipbox").removeClass('showTip');
-
-	if(jQuery(this).hasClass('open')){
-		jQuery(this).removeClass('open');
-	}else{
+	//  jQuery(".tooltipbox").fadeOut();
+	// jQuery(this).siblings(".tooltipbox").hide();
+	// jQuery(this).siblings(".tooltipbox").animate({
+	// 	height: 'toggle'
+	//   }).fadeToggle(500);
+	// jQuery(".tooltipbox").fadeOut();
+	// jQuery(this).siblings(".tooltipbox").animate({
+	// 	width: [ "toggle", "easein" ],
+	// 	height: [ "toggle", "easein" ],
+	// 	easing: "easein"
+	//   }).slidesToShow();
+	if(jQuery(this).siblings(".tooltipbox").hasClass('showTip')){
 		jQuery(this).addClass('open');
-	}
-
-	if(jQuery(this).siblings(".tooltipbox").hasClass('showTip')){		
 		jQuery(this).siblings(".tooltipbox").removeClass('showTip');
-	}else{		
+	}else{
+		jQuery(this).removeClass('open');
 		jQuery(this).siblings(".tooltipbox").addClass('showTip');
 	}
-});
+	
+	// jQuery(this).siblings(".tooltipbox").slideToggle(500);
 
+})
 
 

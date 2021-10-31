@@ -75,10 +75,10 @@ get_header();?>
                                 the_row();
                                 ?>
                                 <div class="tooltip<?php echo $counter_hover;?>"  >		
-                                    <div class="plus_btn<?php echo $counter_hover;?> opentooltip  <?php  if($random == $counter_hover){  echo "open";  }  ?>">
+                                    <div class="plus_btn<?php echo $counter_hover;?> opentooltip">
                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/icons/add.svg" alt="">
                                     </div>
-                                    <div class="tooltip__content<?php echo $counter_hover;?> tooltipbox  ntx3 <?php  if($random == $counter_hover){  echo "showTip";  }  ?>" >                                    
+                                    <div class="tooltip__content<?php echo $counter_hover;?> tooltipbox  ntx3" <?php  if($random == $counter_hover){ /* echo "showTip"; */ }  ?>>                                    
                                         <div class="taghead">
                                             <span><?php the_sub_field( 'heading' ); ?></span>
                                         </div>
@@ -622,7 +622,7 @@ get_header();?>
      </div>
      <!-- end why solar Energy -->
  
-     <!-- Sticky footer -->	
+    	     <!-- Sticky footer -->	
 
      <!-- sticky footer -->                        
 
