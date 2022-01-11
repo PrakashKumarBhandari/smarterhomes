@@ -8,6 +8,8 @@ function smarter_homes_scripts() {
 	wp_enqueue_style( 'slick-slider', get_template_directory_uri() . '/assets/css/slick.css', array(), _S_VERSION, 'all' );
 	wp_enqueue_style( 'slick-themes', get_template_directory_uri() . '/assets/css/slick-theme.css', array(), _S_VERSION, 'all' );
 	wp_enqueue_style( 'animate', get_template_directory_uri() . '/assets/css/animate.min.css', array(), _S_VERSION, 'all' );
+	wp_enqueue_style( 'owl-carousel', get_template_directory_uri() . '/assets/css/owl.carousel.min.css', array(), _S_VERSION, 'all' );
+
 	wp_enqueue_style( 'aos', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), _S_VERSION, 'all' );
 	wp_enqueue_style( 'hover', get_template_directory_uri() . '/assets/css/hover.css', array(), _S_VERSION, 'all' );
 	wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/assets/css/custom.css', array(), _S_VERSION, 'all' );
@@ -21,6 +23,7 @@ function smarter_homes_scripts() {
 	wp_enqueue_script( 'bootstrap-min', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array( 'jquery' ), true );
 	wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/js/slick.min.js', array(),_S_VERSION, true );
 	wp_enqueue_script( 'smarter-wow', get_template_directory_uri() . '/assets/js/wow.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'aos','https://unpkg.com/aos@2.3.1/dist/aos.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'smarter-fullpage-scroll', get_template_directory_uri() . '/assets/js/fullpage.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'smarter-main', get_template_directory_uri() . '/assets/js/main.js', array(), _S_VERSION, true );

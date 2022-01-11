@@ -1,6 +1,4 @@
 <?php
-
-
 /**
  * The base configuration for WordPress
  *
@@ -22,7 +20,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'smarter' );
+define( 'DB_NAME', 'smartehomes' );
 
 /** MySQL database username */
 define( 'DB_USER', 'root' );
@@ -67,7 +65,7 @@ define( 'NONCE_SALT',       'u_9@GErfgwaD<P,vQv>>%T1n)QZ,f/*wnXb>o+{QD~$,A{)pdDi
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wp_';
+$table_prefix = 'mUySS_';
 
 /**
  * For developers: WordPress debugging mode.
