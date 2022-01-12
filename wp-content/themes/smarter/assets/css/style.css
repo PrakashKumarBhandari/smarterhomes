@@ -166,6 +166,13 @@ img {
     background-repeat: no-repeat;
 }
 
+.fullcover {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
